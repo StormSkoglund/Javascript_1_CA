@@ -1,0 +1,38 @@
+header {
+  background-color: rgb(219, 89, 14);
+}
+a {
+  color: antiquewhite;
+}
+body {
+  background-color: rgb(132, 134, 136);
+}
+.infobox {
+  text-align: center;
+  background-color: antiquewhite;
+  border-radius: 30%;
+  margin-top: 5%;
+  margin-left: 30%;
+  margin-bottom: 10%;
+  margin-right: 30%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
+
+footer {
+  background-color: rgb(219, 89, 14);
+}
+/* Buttons
+
+*/
+.SUBMIT {
+  padding: 0.2%;
+  background-color: orangered;
+  color: antiquewhite;
+  font-weight: bolder;
+  border-color: rgb(21, 21, 21);
+  border-radius: 4%;
+  margin: 3%;
+}
