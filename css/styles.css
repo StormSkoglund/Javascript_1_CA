@@ -1,38 +1,69 @@
+/* Header, footer, background on every page*/
 header {
   background-color: rgb(219, 89, 14);
 }
 a {
   color: antiquewhite;
+  text-decoration: none;
 }
 body {
   background-color: rgb(132, 134, 136);
 }
-.infobox {
-  text-align: center;
-  background-color: antiquewhite;
-  border-radius: 30%;
-  margin-top: 5%;
-  margin-left: 30%;
-  margin-bottom: 10%;
-  margin-right: 30%;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 5%;
-  padding-bottom: 10%;
-}
 
 footer {
   background-color: rgb(219, 89, 14);
+  background-size: ;
+  color: antiquewhite;
+  padding: 2% 17% 2%;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 1fr;
+  min-width: 100vh;
 }
-/* Buttons
 
-*/
+footer li {
+  display: inline;
+  padding: 4%;
+}
+
+/* Contact page */
+
+.infobox {
+  align-items: center;
+  text-align: center;
+  background-color: antiquewhite;
+  border-radius: 30%;
+  margin: 10% 35% 10%;
+  padding: 1% 3% 5%;
+}
+
+.container {
+  display: grid;
+  gap: 0.1em;
+  margin: -5% 35% 2%;
+}
+
+.container div {
+  display: grid;
+  gap: 1em;
+  margin: 2%;
+  text-align: left;
+}
+
+.form {
+  height: 150px;
+}
+
+.mail {
+  height: 30px;
+}
+
 .SUBMIT {
-  padding: 0.2%;
+  padding: 6px 18px 6px;
   background-color: orangered;
   color: antiquewhite;
-  font-weight: bolder;
-  border-color: rgb(21, 21, 21);
-  border-radius: 4%;
-  margin: 3%;
+  border: line;
+  border-width: 0.2px;
+  margin: 1% 55.8% 30%;
+  text-align: center;
 }
