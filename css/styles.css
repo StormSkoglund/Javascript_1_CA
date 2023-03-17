@@ -16,9 +16,6 @@ footer {
   color: antiquewhite;
   padding: 2% 17% 2%;
   text-align: center;
-  display: grid;
-  grid-template-rows: 1fr;
-  min-width: 100vh;
 }
 
 footer li {
