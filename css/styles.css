@@ -113,8 +113,6 @@ footer {
   box-shadow: 7px 2px 2px color #575555;
 }
 
-.categories {
-}
 /* Contact page */
 
 .infobox {
@@ -166,15 +164,31 @@ footer {
   padding: 0.1% 11% 2%;
 }
 /*checkout page*/
+
+.checkout-main {
+  display: grid;
+  grid-template-areas:
+    "h2 h2"
+    "checkout checkout"
+    "form form ";
+}
+.review {
+  display: grid;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  grid-area: h2;
+}
+
 .checkout_display {
   display: grid;
   background-color: #db5901;
   grid-template-columns: 250px 300px;
-  border-radius: 10%;
-  margin: 25em;
-  padding: 2% 10% 2%;
+  border-radius: 15px;
+  margin: 8em 30em 5em;
+  padding: 1em 3em 1em;
   grid-gap: 1em;
-  justify-content: center;
+  grid-area: checkout;
   grid-template-areas:
     "text price"
     "button image"
@@ -218,9 +232,10 @@ footer {
   block-size: 40%;
 }
 
-.flexbox-container {
+.checkout-form {
   display: flex;
   flex-direction: column;
+  grid-area: form;
   align-items: center;
 }
 
