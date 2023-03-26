@@ -1,42 +1,91 @@
-/* Header, footer, background on every page*/
-
-/* making a css grid
-header,
-main,
-footer {
-  display: grid;
-  grid-gap: 0;
-  grid-template-rows: 1fr auto 1fr;
-  grid-template-areas:
-    "header"
-    "body"
-    "footer";
-}
-*/
 header {
-  background-color: rgb(219, 89, 14);
+  background: linear-gradient(
+    to top,
+    #db5901 0%,
+    #db5901 50%,
+    #575555 50%,
+    #575555 100%
+  );
+  opacity: 80%;
+  padding: 5px;
+  box-shadow: 1px 4px 4px #575555;
+  width: 100vw;
+  height: auto;
+  object-fit: cover;
 }
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  padding: 1% 0% 1%;
+  align-items: flex-start;
+}
+/*problems with positioning logo correctly */
+
+.logo {
+  width: 12em;
+  height: auto;
+  object-fit: scale-down;
+}
+
+.log-in {
+  width: 3em;
+  height: auto;
+  object-fit: scale-down;
+}
+
+.checkout {
+  width: 3em;
+  height: auto;
+  object-fit: scale-down;
+}
+
+.header-item-1 {
+  flex: 9;
+}
+
+.header-item-2 {
+  flex: 0.7;
+}
+
+.header-item-3 {
+  flex: 0.5;
+}
+
 a {
   color: antiquewhite;
   text-decoration: none;
 }
 body {
   background-color: rgb(132, 134, 136);
+  display: grid;
+  grid-auto-rows: minmax(200px 200px);
+  grid-gap: 10%;
+  grid-template-areas:
+    "header header"
+    "body body"
+    "footer footer";
 }
 
+footer {
+  display: grid;
+  width: 100vw;
+  height: auto;
+  object-fit: cover;
+}
 footer div {
   background-color: rgb(219, 89, 14);
   color: antiquewhite;
-  padding: 2% 17% 2%;
+  padding: 2% 10% 2%;
   text-align: center;
-  display: inline-block;
+  margin: 1em 0em 0em;
 }
 
 footer li {
   display: inline;
-  padding: 4%;
+  padding: 15px 3px 15px;
 }
-/* grid template are definition
+/* Grid areas for header, body, footer*/
 header {
   grid-area: header;
 }
@@ -46,8 +95,26 @@ body {
 footer {
   grid-area: footer;
 }
-*/
 
+/*Home page*/
+.hero {
+  width: 100vw;
+  height: auto;
+  object-fit: cover;
+}
+.button {
+  background-color: #db5901;
+  color: antiquewhite;
+  border: solid;
+  border-color: #100f0f;
+  border-radius: 2px;
+  border-width: 1px;
+  padding: 10px 20px 10px;
+  box-shadow: 7px 2px 2px color #575555;
+}
+
+.categories {
+}
 /* Contact page */
 
 .infobox {
@@ -100,50 +167,125 @@ footer {
 }
 /*checkout page*/
 .checkout_display {
-  align-items: right;
-  text-align: left;
+  display: grid;
   background-color: #db5901;
+  grid-template-columns: 250px 300px;
   border-radius: 10%;
-  margin: 15% 27% 10%;
-  padding: 0.1% 11% 2%;
+  margin: 25em;
+  padding: 2% 10% 2%;
+  grid-gap: 1em;
+  justify-content: center;
+  grid-template-areas:
+    "text price"
+    "button image"
+    "text2 price2"
+    "button2 image2";
 }
+
+.grid-item-1 {
+  grid-area: text;
+}
+
+.grid-item-2 {
+  grid-area: price;
+}
+
+.grid-item-3 {
+  grid-area: image;
+}
+
+.grid-item-4 {
+  grid-area: button;
+}
+
+.grid-item-5 {
+  grid-area: text2;
+}
+
+.grid-item-6 {
+  grid-area: price2;
+}
+
+.grid-item-7 {
+  grid-area: image2;
+}
+
+.grid-item-8 {
+  grid-area: button2;
+}
+
+.checkout_display img {
+  block-size: 40%;
+}
+
 .flexbox-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .flexbox-item {
   padding: 4px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .flexbox-item-1 input {
   text-align: center;
   padding: 0.3rem;
+  border-radius: 4%;
 }
 
-.flexbox-item-2 {
+.flexbox-item-2 input {
+  text-align: center;
+  padding: 0.3rem;
+  border-radius: 4%;
 }
 
-.flexbox-item-3 {
+.flexbox-item-3 input {
+  text-align: center;
+  padding: 0.3rem;
+  border-radius: 4%;
 }
 
-.flexbox-item-4 {
+.flexbox-item-4 input {
+  text-align: center;
+  padding: 0.3rem;
+  border-radius: 4%;
 }
 
-.flexbox-item-5 {
+.flexbox-item-5 input {
+  text-align: center;
+  padding: 0.3rem;
+  border-radius: 4%;
 }
 
-.flexbox-item-6 {
+.flexbox-item-6 input {
+  text-align: center;
+  padding: 0.3rem;
+  border-radius: 4%;
 }
 
-.flexbox-item-7 {
+.flexbox-item-7 input {
+  text-align: center;
+  padding: 0.3rem;
+  border-radius: 4%;
 }
 
-.flexbox-item-8 {
+.flexbox-item-8 input {
+  text-align: center;
+  padding: 0.3rem;
+  border-radius: 4%;
 }
 
-.flexbox-item-9 {
+.flexbox-item-9 input {
+  text-align: center;
+  padding: 0.3rem;
+  border-radius: 4%;
 }
 
-.flexbox-item-10 {
+.flexbox-item-10 input {
+  text-align: center;
+  padding: 0.3rem;
+  border-radius: 4%;
 }
