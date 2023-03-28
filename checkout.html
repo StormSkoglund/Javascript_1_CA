@@ -4,6 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--fonts-->
+    <!--Bungee font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&display=swap"
+      rel="stylesheet"
+    />
+    <!--Overlock font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overlock+SC&display=swap"
+      rel="stylesheet"
+    />
+    <!--karla font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/styles.css" />
     <title>Checkout Page</title>
   </head>
@@ -35,16 +58,12 @@
             alt="A photograph of a girl dressed in a homemade superhero suit, the title of the game 'Super Duper' is printed in capital letters"
           />
         </div>
-
         <div class="grid-item grid-item-4">
-          <button class="remove-from-cart">Remove From Cart</button>
+          <a href="removegame1.html">Remove From Cart</a>
         </div>
+        <div class="grid-item grid-item-5">1 x Assassin for Playbox, used</div>
 
-        <div class="grid-item grid-item-5">
-          1 x Super Duper for Playbox, digital download
-        </div>
-
-        <div class="grid-item grid-item-6"><strong>Kr.450</strong></div>
+        <div class="grid-item grid-item-6"><strong>Kr.150</strong></div>
 
         <div class="grid-item grid-item-7">
           <img
@@ -54,7 +73,7 @@
         </div>
 
         <div class="grid-item grid-item-8">
-          <button class="remove-from-cart">Remove From Cart</button>
+          <a href="removegame2.html">Remove From Cart</a>
         </div>
       </section>
 
@@ -72,16 +91,27 @@
             id="email"
             class="checkout_email"
             placeholder="Example@mail.com"
+            required
           />
         </div>
 
         <label for="payment" class="payment">Cardholder Name</label>
         <div class="flexbox-item flexbox-item-2">
-          <input type="text" class="first_name" placeholder="First Name" />
+          <input
+            type="text"
+            class="first_name"
+            placeholder="First Name"
+            required
+          />
         </div>
 
         <div class="flexbox-item flexbox-item-3">
-          <input type="text" class="last_name" placeholder="Last Name" />
+          <input
+            type="text"
+            class="last_name"
+            placeholder="Last Name"
+            required
+          />
         </div>
 
         <label for="card number">Card Number</label>
@@ -90,37 +120,44 @@
             type="number"
             class="card_number"
             placeholder="1234 1234 1234 1234"
+            required
+          />
+
+          <img
+            class="visa"
+            src="images/buttons_and_icons/VisaMaster.png"
+            alt="Visa and Mastercard logos, payment options."
           />
         </div>
 
         <label for="exp">Expiration date</label>
         <div class="flexbox-item flexbox-item-5">
-          <input type="text" placeholder="MM/YY" />
+          <input type="text" placeholder="MM/YY" required />
         </div>
 
         <label for="cvc">CVC</label>
         <div class="flexbox-item flexbox-item-6">
-          <input type="number" placeholder="123" />
+          <input type="number" placeholder="123" required />
         </div>
 
         <label for="address 1">Address 1</label>
         <div class="flexbox-item flexbox-item-7">
-          <input type="text" placeholder="Street Address" />
+          <input type="text" placeholder="Street Address" required />
         </div>
 
         <label for="address 2">Address 2</label>
         <div class="flexbox-item flexbox-item-8">
-          <input type="text" placeholder="Alternate Address" />
+          <input type="text" placeholder="Alternate Address" required />
         </div>
 
         <label for="country">Country</label>
         <div class="flexbox-item flexbox-item-9">
-          <input type="text" placeholder="Your Country" />
+          <input type="text" placeholder="Your Country" required />
         </div>
 
         <label for="zip code">ZIP Code</label>
         <div class="flexbox-item flexbox-item-10">
-          <input type="number" placeholder="ZIP" />
+          <input type="number" placeholder="ZIP" required />
         </div>
       </section>
     </main>

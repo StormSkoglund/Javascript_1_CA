@@ -1,3 +1,22 @@
+html {
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Karla", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  font-family: "Bungee", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  font-family: "Overlock SC", Cambria, Cochin, Georgia, Times, "Times New Roman",
+    serif;
+}
+
 header {
   background: linear-gradient(
     to top,
@@ -6,9 +25,9 @@ header {
     #575555 50%,
     #575555 100%
   );
-  opacity: 80%;
+  opacity: 100%;
   padding: 5px;
-  box-shadow: 1px 4px 4px #575555;
+  box-shadow: 0px 4px 4px #575555;
   width: 100vw;
   height: auto;
   object-fit: cover;
@@ -57,10 +76,13 @@ a {
   text-decoration: none;
 }
 body {
-  background-color: rgb(132, 134, 136);
+  background-color: rgb(255, 255, 255);
   display: grid;
   grid-auto-rows: minmax(200px 200px);
   grid-gap: 10%;
+  position: relative;
+  left: -0.5em;
+  top: -0.5em;
   grid-template-areas:
     "header header"
     "body body"
@@ -98,10 +120,14 @@ footer {
 
 /*Home page*/
 .hero {
+  position: relative;
   width: 100vw;
-  height: auto;
-  object-fit: cover;
+  height: 25%;
+  filter: blur(1.2px);
+  border-top-left-radius: 80em;
+  border-top-right-radius: 80em;
 }
+
 .button {
   background-color: #db5901;
   color: antiquewhite;
@@ -170,25 +196,28 @@ footer {
   grid-template-areas:
     "h2 h2"
     "checkout checkout"
-    "form form ";
+    "form form";
 }
 .review {
-  display: grid;
-  position: absolute;
-  left: 50%;
-  right: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   grid-area: h2;
 }
 
 .checkout_display {
   display: grid;
-  background-color: #db5901;
+  background-color: #b46836;
+  width: 600px;
+  height: fit-content;
   grid-template-columns: 250px 300px;
   border-radius: 15px;
-  margin: 8em 30em 5em;
+  margin: 8em 30em 2em;
   padding: 1em 3em 1em;
   grid-gap: 1em;
   grid-area: checkout;
+  box-shadow: 10px 10px 10px #575555;
   grid-template-areas:
     "text price"
     "button image"
@@ -210,6 +239,13 @@ footer {
 
 .grid-item-4 {
   grid-area: button;
+  border: solid #100f0f;
+  border-width: 2px;
+  border-radius: 2px;
+  background-color: #db5901;
+  padding: 10px;
+  width: fit-content;
+  height: fit-content;
 }
 
 .grid-item-5 {
@@ -226,17 +262,38 @@ footer {
 
 .grid-item-8 {
   grid-area: button2;
+  border: solid #100f0f;
+  border-width: 2px;
+  border-radius: 2px;
+  background-color: #db5901;
+  padding: 10px;
+  width: fit-content;
+  height: fit-content;
 }
 
 .checkout_display img {
-  block-size: 40%;
+  width: 20em;
+  height: 25em;
 }
 
 .checkout-form {
   display: flex;
   flex-direction: column;
   grid-area: form;
+  opacity: 80%;
   align-items: center;
+  /*grid-template-areas:
+    "input1 input1"
+    "input2 input3"
+    "input4 visa"
+    "input5 input6"
+    "input7 input7"
+    "input8 input8"
+    "input9 input10";*/
+}
+.checkout-form div {
+  display: grid;
+  grid-template-areas: "input4 visa";
 }
 
 .flexbox-item {
@@ -249,58 +306,173 @@ footer {
   text-align: center;
   padding: 0.3rem;
   border-radius: 4%;
+  grid-area: input1;
 }
 
 .flexbox-item-2 input {
   text-align: center;
   padding: 0.3rem;
   border-radius: 4%;
+  grid-area: input2;
 }
 
 .flexbox-item-3 input {
   text-align: center;
   padding: 0.3rem;
   border-radius: 4%;
+  grid-area: input3;
 }
 
 .flexbox-item-4 input {
   text-align: center;
   padding: 0.3rem;
   border-radius: 4%;
+  grid-area: input4;
 }
 
 .flexbox-item-5 input {
   text-align: center;
   padding: 0.3rem;
   border-radius: 4%;
+  grid-area: input5;
 }
 
 .flexbox-item-6 input {
   text-align: center;
   padding: 0.3rem;
   border-radius: 4%;
+  grid-area: input6;
 }
 
 .flexbox-item-7 input {
   text-align: center;
   padding: 0.3rem;
   border-radius: 4%;
+  grid-area: input7;
 }
 
 .flexbox-item-8 input {
   text-align: center;
   padding: 0.3rem;
   border-radius: 4%;
+  grid-area: input8;
 }
 
 .flexbox-item-9 input {
   text-align: center;
   padding: 0.3rem;
   border-radius: 4%;
+  grid-area: input9;
 }
 
 .flexbox-item-10 input {
   text-align: center;
   padding: 0.3rem;
   border-radius: 4%;
+  grid-area: input10;
+}
+
+.visa {
+  width: 4em;
+  height: 2.5em;
+  margin-left: 1em;
+  grid-area: visa;
+}
+/*product page*/
+
+.overlay {
+  background-color: #575555;
+  width: 100vw;
+  height: fit-content;
+  position: relative;
+  top: -16.1em;
+  opacity: calc(80%);
+}
+
+.product-hero {
+  width: 50em;
+  height: auto;
+  position: relative;
+  left: 25em;
+  right: 25em;
+  top: -0.1em;
+  opacity: calc(80%);
+  filter: blur(0.5px);
+  filter: brightness(85%);
+}
+
+.product-game {
+  position: relative;
+  width: 30em;
+  height: auto;
+  top: -54.6em;
+  left: 10em;
+}
+
+.product-text {
+  position: relative;
+  width: 17em;
+  height: 18em;
+  color: white;
+
+  top: -92em;
+  left: 55em;
+}
+
+.pick-game {
+  position: relative;
+  top: -70em;
+  left: 15em;
+}
+
+.new-game {
+  position: relative;
+  left: 9em;
+  top: -2.2em;
+  background-color: #db5901;
+  padding: 10px;
+  font-weight: bolder;
+  border-radius: 4px;
+}
+.used-game {
+  position: relative;
+  left: 9em;
+  top: -2.2em;
+  background-color: #db5901;
+  padding: 10px;
+  font-weight: bolder;
+  border-radius: 4px;
+}
+
+.price-cart {
+  position: relative;
+  width: 50px;
+  left: 18em;
+  top: -3.5em;
+  padding: 6px;
+  box-shadow: 0px 4px 5px #575555;
+}
+
+.screenshots {
+  position: relative;
+  top: -65em;
+  /*bottom: -100em;*/
+  display: flex;
+  flex-direction: row;
+  gap: 4em;
+}
+
+.screenshots h2 {
+  position: relative;
+  left: 2em;
+  top: -3em;
+  width: fit-content;
+  height: fit-content;
+}
+
+.shot1,
+.shot2,
+.shot3 {
+  width: 25em;
+  height: auto;
 }

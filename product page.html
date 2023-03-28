@@ -4,7 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--fonts-->
+
+    <!--Bungee font-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Overlock font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overlock+SC&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--karla font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/styles.css" />
+
     <title>Product page</title>
   </head>
   <body>
@@ -17,53 +45,72 @@
       </nav>
     </header>
     <main>
-      <div>
+      <div class="overlay">
         <img
-          src="images/Hero banner final.gif"
+          class="product-hero"
+          src="images/flighty.gif"
           alt="A super hero girl flying through the clouds"
         />
       </div>
       <div>
         <img
+          class="product-game"
           src="images/GameHub_covers2.jpg"
           alt="Cover of a video game about a superhero girl"
         />
       </div>
-      <h2>I believe I can fly</h2>
-      <p>Soar into the sky as the “Super Duper” Karla Keys!</p>
-      <p>
-        “Super Duper” lets you explore the life of a superhero, from early
-        childhood to adulthood. balancing everyday life with superpowers,
-        dealing with school, super villains, and tax returns!
-      </p>
-      <div>
-        <label for="used game"
-          >Pre-owned game <br />
-          -Physical copy</label
-        >
-        <button class="used game">Add to cart</button>
+
+      <article class="product-text">
+        <h2>I believe I can fly</h2>
+        <p>Soar into the sky as the “Super Duper” Karla Keys!</p>
+        <p>
+          “Super Duper” lets you explore the life of a superhero, from early
+          childhood to adulthood. balancing everyday life with superpowers,
+          dealing with school, super villains, and tax returns!
+        </p>
+      </article>
+      <aside class="pick-game">
+        <div>
+          Pre-owned game <br />
+          -Physical copy
+        </div>
+        <div>
+          <a href="addcart.html" class="cta new-game">Add to Cart</a>
+        </div>
+
+        <div class="price-cart">Kr.150</div>
+
         <br />
-        <label for="new game"
-          >New <br />
-          -Digital download</label
-        >
-        <button class="new game">Add to cart</button>
-      </div>
-      <div>
-        <h2>Screenshots</h2>
-      </div>
-      <div>
+
+        <div>
+          New <br />
+          -Digital download
+        </div>
+
+        <div>
+          <a href="addcart.html" class="cta used-game">Add to Cart</a>
+        </div>
+
+        <div class="price-cart">Kr.450</div>
+      </aside>
+
+      <div class="screenshots">
+        <h2>Screenshots:</h2>
+
         <img
+          class="shot1"
           src="images/Super_duper3.png"
           alt="A female superhero standing on top of a building"
           class="product screen1"
         />
         <img
+          class="shot2"
           src="images/Super_duper4.png"
           alt="A female superhero flying towards the camera"
           class="product screen2"
         />
         <img
+          class="shot3"
           src="images/Super_duper1.jpeg"
           alt="Portrait of a female superhero"
           class="product screen3"
