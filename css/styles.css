@@ -1,3 +1,4 @@
+/*global styling*/
 html {
   min-height: 100vh;
   width: 100vw;
@@ -31,6 +32,9 @@ header {
   width: 100vw;
   height: auto;
   object-fit: cover;
+  position: relative;
+  left: -0.5em;
+  top: -0.5em;
 }
 
 header nav {
@@ -78,15 +82,15 @@ a {
 body {
   background-color: rgb(255, 255, 255);
   display: grid;
-  grid-auto-rows: minmax(200px 200px);
-  grid-gap: 10%;
-  position: relative;
-  left: -0.5em;
-  top: -0.5em;
   grid-template-areas:
     "header header"
     "body body"
     "footer footer";
+}
+
+main {
+  width: 100vw;
+  height: auto;
 }
 
 footer {
@@ -100,7 +104,6 @@ footer div {
   color: antiquewhite;
   padding: 2% 10% 2%;
   text-align: center;
-  margin: 1em 0em 0em;
 }
 
 footer li {
@@ -208,16 +211,16 @@ footer {
 
 .checkout_display {
   display: grid;
-  background-color: #b46836;
+  background-color: #f69351;
   width: 600px;
   height: fit-content;
   grid-template-columns: 250px 300px;
-  border-radius: 15px;
+  border-radius: 50px;
   margin: 8em 30em 2em;
   padding: 1em 3em 1em;
   grid-gap: 1em;
   grid-area: checkout;
-  box-shadow: 10px 10px 10px #575555;
+  box-shadow: 0px 10px 10px #575555;
   grid-template-areas:
     "text price"
     "button image"
@@ -282,14 +285,6 @@ footer {
   grid-area: form;
   opacity: 80%;
   align-items: center;
-  /*grid-template-areas:
-    "input1 input1"
-    "input2 input3"
-    "input4 visa"
-    "input5 input6"
-    "input7 input7"
-    "input8 input8"
-    "input9 input10";*/
 }
 .checkout-form div {
   display: grid;
@@ -381,11 +376,11 @@ footer {
 /*product page*/
 
 .overlay {
-  background-color: #575555;
+  background-color: #323131;
   width: 100vw;
   height: fit-content;
   position: relative;
-  top: -16.1em;
+  top: -1em;
   opacity: calc(80%);
 }
 
@@ -395,7 +390,6 @@ footer {
   position: relative;
   left: 25em;
   right: 25em;
-  top: -0.1em;
   opacity: calc(80%);
   filter: blur(0.5px);
   filter: brightness(85%);
@@ -405,7 +399,7 @@ footer {
   position: relative;
   width: 30em;
   height: auto;
-  top: -54.6em;
+  top: -39.55em;
   left: 10em;
 }
 
@@ -414,14 +408,13 @@ footer {
   width: 17em;
   height: 18em;
   color: white;
-
-  top: -92em;
+  top: -75em;
   left: 55em;
 }
 
 .pick-game {
   position: relative;
-  top: -70em;
+  top: -55em;
   left: 15em;
 }
 
@@ -455,8 +448,7 @@ footer {
 
 .screenshots {
   position: relative;
-  top: -65em;
-  /*bottom: -100em;*/
+  top: -35em;
   display: flex;
   flex-direction: row;
   gap: 4em;
@@ -475,4 +467,116 @@ footer {
 .shot3 {
   width: 25em;
   height: auto;
+}
+
+/* list of games */
+
+.games-list-description {
+  display: grid;
+  grid-template-columns: 1fr 2.7fr;
+  gap: 0em;
+  grid-template-areas:
+    "h1 h1 h1"
+    "2h1 console console"
+    "2h1 h2 h2 ";
+}
+
+.h1-list {
+  grid-area: h1;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.h1-list2 {
+  grid-area: 2h1;
+  margin: 2em;
+}
+
+.h2-list {
+  grid-area: h2;
+  margin-bottom: 3em;
+  width: 50em;
+}
+
+.console-images {
+  grid-area: console;
+}
+
+.games-list-description img {
+  width: 350px;
+  height: auto;
+  margin: 0.5em;
+}
+.consolebanner1 {
+  background-color: #575555;
+  color: antiquewhite;
+  width: 30vw;
+  margin: 0 auto;
+  padding: 1em 10em 1em 0.5em;
+  box-shadow: 0px 5px 6px #db5901;
+}
+.games-list {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: fit-content;
+  margin: 1em 1.8em 0.5em;
+}
+
+.games-list img {
+  width: 250px;
+  height: auto;
+}
+
+.games-list button {
+  position: relative;
+  top: 2em;
+  margin: 3em 0em 3em 0em;
+  left: -6.6em;
+}
+
+.games-list label {
+  position: relative;
+  top: -19em;
+
+  font-weight: bolder;
+}
+.games-list2 {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: fit-content;
+  margin: 1em 1.7em 0.5em;
+}
+
+.games-list2 img {
+  width: 250px;
+  height: auto;
+}
+
+.games-list2 button {
+  position: relative;
+  top: 2em;
+  margin: 3em 0em 3em 0em;
+  left: -6.6em;
+}
+
+.games-list2 label {
+  position: relative;
+  top: -19em;
+
+  font-weight: bolder;
+}
+
+.consolebanner2 {
+  background-color: #575555;
+  color: antiquewhite;
+  width: 30vw;
+  margin: 0 auto;
+  padding: 1em 10em 1em 0.5em;
+  box-shadow: 0px 5px 6px #db5901;
 }
