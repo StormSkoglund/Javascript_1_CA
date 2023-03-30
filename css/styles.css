@@ -5,6 +5,13 @@ html {
   overflow-x: hidden;
 }
 
+:root {
+  --my-orange: #db5901;
+  --my-grey: #575555;
+  --my-light-grey: #d5c8c3;
+  --my-padding: 5px;
+}
+
 body {
   font-family: "Karla", Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -21,14 +28,14 @@ h2 {
 header {
   background: linear-gradient(
     to top,
-    #db5901 0%,
-    #db5901 50%,
-    #575555 50%,
-    #575555 100%
+    var(--my-orange) 0%,
+    var(--my-orange) 50%,
+    var(--my-grey) 50%,
+    var(--my-grey) 100%
   );
   opacity: 100%;
   padding: 5px;
-  box-shadow: 0px 4px 4px #575555;
+  box-shadow: 0px 4px 4px var(--my-grey);
   width: 100vw;
   height: auto;
   object-fit: cover;
@@ -85,8 +92,9 @@ body {
   padding: 0;
   grid-template-areas:
     "header header"
-    "body body"
+    "main main"
     "footer footer";
+  min-height: 100vh;
 }
 
 main {
@@ -105,7 +113,7 @@ footer {
   margin-top: 2em;
 }
 footer div {
-  background-color: rgb(219, 89, 14);
+  background-color: var(--my-orange);
   color: antiquewhite;
   padding: 2% 10% 2%;
   text-align: center;
@@ -119,8 +127,8 @@ footer li {
 header {
   grid-area: header;
 }
-body {
-  grid-area: body;
+main {
+  grid-area: main;
 }
 footer {
   grid-area: footer;
@@ -128,9 +136,9 @@ footer {
 
 a:hover {
   transition: ease-in-out, 500ms;
-  background-color: #ef803a;
-  text-shadow: 0px 3px 5px #313030;
-  box-shadow: 0px 5px 2px #575555;
+  background-color: var(--my-orange);
+  text-shadow: 0px 3px 5px var(--my-grey);
+  box-shadow: 0px 5px 2px var(--my-light-grey);
 }
 
 .button {
@@ -142,7 +150,7 @@ a:hover {
   border-width: 1px;
   padding: 10px 20px 10px;
   margin: 1em;
-  box-shadow: 0px 2px 2px #575555;
+  box-shadow: 0px 2px 5px #575555;
 }
 /*Home page*/
 .main-split {
@@ -273,6 +281,10 @@ a:hover {
   text-align: center;
 }
 /*ABOUT US*/
+
+.back-about {
+  background-color: var(--my-light-grey);
+}
 .infobox2 {
   align-items: center;
   text-align: center;
@@ -462,7 +474,12 @@ a:hover {
   margin-left: 1em;
   grid-area: visa;
 }
+
 /*product page*/
+
+.main-product {
+  height: 50vh;
+}
 
 .overlay {
   background-color: #323131;
@@ -511,25 +528,17 @@ a:hover {
   position: relative;
   left: 9em;
   top: -2.2em;
-  background-color: #db5901;
-  padding: 10px;
-  font-weight: bolder;
-  border-radius: 4px;
 }
 .used-game {
   position: relative;
   left: 9em;
   top: -2.2em;
-  background-color: #db5901;
-  padding: 10px;
-  font-weight: bolder;
-  border-radius: 4px;
 }
 
 .price-cart {
   position: relative;
   width: 50px;
-  left: 18em;
+  left: 19em;
   top: -3.5em;
   padding: 6px;
   box-shadow: 0px 4px 5px #575555;
@@ -537,7 +546,7 @@ a:hover {
 
 .screenshots {
   position: relative;
-  top: -35em;
+  top: -45em;
   display: flex;
   flex-direction: row;
   gap: 4em;
@@ -559,6 +568,10 @@ a:hover {
 }
 
 /* list of games */
+
+/*.wrap1 {
+  max-width: 1200px;
+  margin: 0 auto;*/
 
 .games-list-description {
   display: grid;
@@ -608,10 +621,11 @@ a:hover {
 .games-list {
   display: flex;
   flex-direction: row;
-  align-items: baseline;
+  align-items: flex-start;
   flex-wrap: wrap;
   justify-content: center;
   width: fit-content;
+  gap: 4em;
   margin: 1em 1.8em 0.5em;
 }
 
@@ -620,10 +634,10 @@ a:hover {
   height: auto;
 }
 
-.games-list button {
+.games-button {
   position: relative;
   top: 2em;
-  margin: 3em 0em 3em 0em;
+  margin: 1em;
   left: -6.6em;
 }
 
@@ -636,11 +650,12 @@ a:hover {
 .games-list2 {
   display: flex;
   flex-direction: row;
-  align-items: baseline;
+  align-items: flex-start;
   flex-wrap: wrap;
   justify-content: center;
   width: fit-content;
-  margin: 1em 1.7em 0.5em;
+  gap: 4em;
+  margin: 1em 1.8em 0.5em;
 }
 
 .games-list2 img {
@@ -670,3 +685,91 @@ a:hover {
   padding: 1em 10em 1em 0.5em;
   box-shadow: 0px 5px 6px #db5901;
 }
+
+/*Add to cart*/
+
+.back-add-cart {
+  background-color: var(--my-light-grey);
+}
+
+.added-cart {
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  border-radius: 40px;
+  margin: 15% 27% 10%;
+  padding: 0.1% 11% 2%;
+}
+
+.confirmed {
+  width: 4em;
+  margin: 2em;
+}
+/*user login*/
+
+.back-main {
+  background-color: var(--my-light-grey);
+}
+
+.login {
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  border-radius: 40px;
+  margin: 2em 30em 2em;
+  padding: 0.1% 11% 2%;
+}
+
+.login input {
+  text-align: center;
+  padding: var(--my-padding);
+  font-weight: bolder;
+}
+
+/*game hub account*/
+
+.main-back-account {
+  background-color: var(--my-light-grey);
+}
+
+.account-h1 {
+  background-color: var(--my-orange);
+  color: white;
+  text-align: center;
+}
+
+.account-h2 {
+  background-color: var(--my-orange);
+  font-weight: bold;
+  padding-left: var(--my-padding);
+}
+
+.decorative-sidebar {
+  background-color: var(--my-grey);
+  width: 10em;
+  min-height: 100vh;
+  font: var(--my-grey);
+}
+
+.account-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+.owned-game {
+  border: solid var(--my-grey);
+  width: 30em;
+  height: fit-content;
+  text-align: center;
+  margin-left: 3em;
+}
+
+.owned-game img {
+  width: 15em;
+  height: 20em;
+  align-items: center;
+}
+/*
+@media screen and (max-with: 800px) */
