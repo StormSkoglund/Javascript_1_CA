@@ -33,7 +33,7 @@ header {
   height: auto;
   object-fit: cover;
   position: relative;
-  left: -0.5em;
+  /*left: -0.5em;*/
   top: -0.5em;
 }
 
@@ -43,7 +43,6 @@ header nav {
   padding: 1% 0% 1%;
   align-items: flex-start;
 }
-/*problems with positioning logo correctly */
 
 .logo {
   width: 12em;
@@ -82,6 +81,8 @@ a {
 body {
   background-color: rgb(255, 255, 255);
   display: grid;
+  margin: 0;
+  padding: 0;
   grid-template-areas:
     "header header"
     "body body"
@@ -98,6 +99,10 @@ footer {
   width: 100vw;
   height: auto;
   object-fit: cover;
+  position: relative;
+  /*left: -0.5em;*/
+  bottom: -0.5em;
+  margin-top: 2em;
 }
 footer div {
   background-color: rgb(219, 89, 14);
@@ -121,25 +126,109 @@ footer {
   grid-area: footer;
 }
 
-/*Home page*/
-.hero {
-  position: relative;
-  width: 100vw;
-  height: 25%;
-  filter: blur(1.2px);
-  border-top-left-radius: 80em;
-  border-top-right-radius: 80em;
+a:hover {
+  transition: ease-in-out, 500ms;
+  background-color: #ef803a;
+  text-shadow: 0px 3px 5px #313030;
+  box-shadow: 0px 5px 2px #575555;
 }
 
 .button {
   background-color: #db5901;
   color: antiquewhite;
-  border: solid;
+  font-weight: bolder;
   border-color: #100f0f;
-  border-radius: 2px;
+  border-radius: 3px;
   border-width: 1px;
   padding: 10px 20px 10px;
-  box-shadow: 7px 2px 2px color #575555;
+  margin: 1em;
+  box-shadow: 0px 2px 2px #575555;
+}
+/*Home page*/
+.main-split {
+  background: linear-gradient(
+    to top,
+    #d5c8c3 0%,
+    #d5c8c3 50%,
+    #ffff 50%,
+    #ffff 100%
+  );
+}
+
+.hero {
+  width: 70vw;
+  height: auto;
+  margin: 0vw 15vw 0vw;
+  border-top-left-radius: 80em;
+  border-top-right-radius: 80em;
+}
+
+.first-textbox {
+  position: relative;
+  width: 18em;
+  top: -55em;
+  left: 20em;
+}
+
+.first-textbox h1 {
+  font-weight: bolder;
+  font-size: x-large;
+  color: antiquewhite;
+}
+
+.first-textbox p {
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.second-textbox {
+  background-color: #d5c8c3;
+  position: relative;
+  width: 30em;
+  height: 40em;
+  margin: auto;
+  top: -40em;
+  padding: 4em;
+  border-top-right-radius: 70vw;
+  border-top-left-radius: 70vw;
+}
+
+.second-textbox h1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-weight: bolder;
+  text-decoration: double;
+  text-shadow: 0px 3px 5px #575555;
+  color: antiquewhite;
+}
+
+.front-flexbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2em;
+  justify-content: space-evenly;
+}
+
+.front-cover {
+  display: inline-block;
+  width: 25vw;
+  height: 30vw;
+}
+.front-screenshot {
+  display: inline-block;
+  width: 25vw;
+  height: 30vw;
+}
+.front-image-text {
+  width: 1000px;
+  margin: 3em auto;
+}
+
+.to-game {
+  float: right;
+  margin-right: 5em;
 }
 
 /* Contact page */
@@ -483,8 +572,9 @@ footer {
 
 .h1-list {
   grid-area: h1;
-  width: 500px;
-  margin: 0 auto;
+  position: relative;
+  right: 25%;
+  left: 25%;
 }
 
 .h1-list2 {
