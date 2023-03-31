@@ -107,82 +107,137 @@
       <section class="checkout-form">
         <h2>Checkout</h2>
 
-        <label for="email">Contact</label>
-        <div class="flexbox-item flexbox-item-1">
-          <input
-            type="email"
-            name="email"
-            id="email"
-            class="checkout_email"
-            placeholder="Example@mail.com"
-            required
-          />
-        </div>
+        <form action="checkout-success.html" class="GET">
+          <fieldset>
+            <legend>Contact</legend>
+            <input
+              class="flexbox-item flexbox-item-1"
+              type="email"
+              name="email"
+              id="email"
+              class="checkout_email"
+              placeholder="Example@mail.com"
+              required
+            />
+          </fieldset>
 
-        <label for="payment" class="payment">Cardholder Name</label>
-        <div class="flexbox-item flexbox-item-2">
-          <input
-            type="text"
-            class="first_name"
-            placeholder="First Name"
-            required
-          />
-        </div>
+          <fieldset>
+            <legend>Cardholder Name</legend>
+            <input
+              class="flexbox-item flexbox-item-2"
+              type="text"
+              class="first_name"
+              placeholder="First Name"
+              required
+            />
+            <input
+              class="flexbox-item flexbox-item-3"
+              type="text"
+              class="last_name"
+              placeholder="Last Name"
+              required
+            />
+          </fieldset>
 
-        <div class="flexbox-item flexbox-item-3">
-          <input
-            type="text"
-            class="last_name"
-            placeholder="Last Name"
-            required
-          />
-        </div>
+          <fieldset>
+            <legend>Card Number</legend>
 
-        <label for="card number">Card Number</label>
-        <div class="flexbox-item flexbox-item-4">
-          <input
-            type="number"
-            class="card_number"
-            placeholder="1234 1234 1234 1234"
-            required
-          />
+            <input
+              class="flexbox-item flexbox-item-4"
+              type="number"
+              class="card_number"
+              placeholder="1234 1234 1234 1234"
+              required
+            />
 
-          <img
-            class="visa"
-            src="images/buttons_and_icons/VisaMaster.png"
-            alt="Visa and Mastercard logos, payment options."
-          />
-        </div>
+            <img
+              class="visa"
+              src="images/buttons_and_icons/VisaMaster.png"
+              alt="Visa and Mastercard logos, payment options."
+            />
+          </fieldset>
 
-        <label for="exp">Expiration date</label>
-        <div class="flexbox-item flexbox-item-5">
-          <input type="text" placeholder="MM/YY" required />
-        </div>
+          <fieldset>
+            <legend>Expiration date</legend>
 
-        <label for="cvc">CVC</label>
-        <div class="flexbox-item flexbox-item-6">
-          <input type="number" placeholder="123" required />
-        </div>
+            <input
+              class="flexbox-item flexbox-item-5"
+              type="text"
+              placeholder="MM/YY"
+              required
+            />
+            <legend>CVC</legend>
+            <input
+              class="flexbox-item flexbox-item-6"
+              type="number"
+              placeholder="123"
+              required
+            />
+          </fieldset>
+          <fieldset>
+            <legend>Address</legend>
+            <label for="address 1">Address 1</label>
 
-        <label for="address 1">Address 1</label>
-        <div class="flexbox-item flexbox-item-7">
-          <input type="text" placeholder="Street Address" required />
-        </div>
+            <input
+              class="flexbox-item flexbox-item-7"
+              type="text"
+              placeholder="Street Address"
+              required
+            />
 
-        <label for="address 2">Address 2</label>
-        <div class="flexbox-item flexbox-item-8">
-          <input type="text" placeholder="Alternate Address" required />
-        </div>
+            <label for="address 2">Address 2</label>
 
-        <label for="country">Country</label>
-        <div class="flexbox-item flexbox-item-9">
-          <input type="text" placeholder="Your Country" required />
-        </div>
+            <input
+              class="flexbox-item flexbox-item-8"
+              type="text"
+              placeholder="Alternate Address"
+              required
+            />
+          </fieldset>
+          <fieldset>
+            <legend>Country</legend>
+            <label for="country">Country</label>
 
-        <label for="zip code">ZIP Code</label>
-        <div class="flexbox-item flexbox-item-10">
-          <input type="number" placeholder="ZIP" required />
-        </div>
+            <input
+              class="flexbox-item flexbox-item-9"
+              type="text"
+              placeholder="Your Country"
+              required
+            />
+
+            <label for="zip code">ZIP Code</label>
+
+            <input
+              class="flexbox-item flexbox-item-10"
+              type="number"
+              placeholder="ZIP"
+              required
+            />
+          </fieldset>
+
+          <section class="total">
+            <span
+              >1 x Assassin for Playbox, used <strong>Kr. 150</strong>
+            </span>
+            <br /><br />
+            <span>
+              1 X Karla Keys for Playbox, digital
+              <strong>Kr. 450</strong> download
+            </span>
+            <br />
+            <br />
+            <span>Shipping Cost <strong>Kr. 100</strong> </span>
+            <br /><br />
+            <hr />
+            Total item costs <strong>Kr. 700</strong> <br /><br />
+            <br />
+          </section>
+          <div class="flex-button">
+            <a href="checkout-success.html"
+              ><input type="submit" class="button button-submit2"
+            /></a>
+          </div>
+        </form>
       </section>
     </main>
     <footer>

@@ -535,10 +535,37 @@ a {
 }
 
 .visa {
-  width: 4em;
-  height: 2.5em;
+  width: 5em;
+  height: 3em;
   margin-left: 1em;
   grid-area: visa;
+}
+fieldset {
+  border-radius: 5px;
+  border-width: 3px;
+}
+
+form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3em;
+}
+
+.total {
+  margin-top: 2em;
+}
+
+.button-submit2 {
+  border: none;
+}
+
+.flex-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /*product page*/
@@ -838,5 +865,21 @@ a {
   height: 20em;
   align-items: center;
 }
+
+/* contact success */
+.main-contact-success {
+  background-color: var(--my-light-grey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.confirm {
+  width: 6em;
+  height: auto;
+  align-items: center;
+  margin-top: -10em;
+}
+
 /*
-@media screen and (max-with: 800px) */
+@media screen and (max-with: 800px) */ ;
