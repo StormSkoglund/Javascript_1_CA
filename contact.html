@@ -32,38 +32,78 @@
   <body>
     <header>
       <nav>
-        <a href="index.html">GAME HUB</a>
-        <h1>Search</h1>
-        <a href="#">Log In</a>
-        <a href="checkout.html">Check out</a>
+        <a href="index.html" class="header-item-1"
+          ><img
+            class="logo"
+            src="images/buttons_and_icons/Logo test.png"
+            alt="A drawing of a console controller, and the text 'Game Hub'. This is the company logo"
+        /></a>
+        <input type="search" class="search" />
+        <a href="list of games.html"
+          ><img
+            class="search-icon"
+            src="images/buttons_and_icons/Search.png"
+            alt="search-icon"
+        /></a>
+
+        <div></div>
+        <a href="login.html" class="header-item-2"
+          ><img
+            class="log-in"
+            src="images/buttons_and_icons/Login.png"
+            alt="This is a link to the log-in section"
+        /></a>
+        <a href="checkout.html" class="header-item-3"
+          ><img
+            class="checkout"
+            src="images/buttons_and_icons/Checkout.png"
+            alt="a shopping-cart icon. This is a link to the checkout section"
+        /></a>
       </nav>
     </header>
-    <section class="infobox">
-      <div>
-        <h1>Contact</h1>
-        <p>
-          Do you have any questions regarding our products or how to sell your
-          used games?
-        </p>
-        <p>
-          Fill out a form and submit it, then we will reach out to you within
-          one to two working days.
-        </p>
-      </div>
-    </section>
+    <main class="contact-main">
+      <section class="infobox">
+        <div>
+          <h1>Contact</h1>
+          <p>
+            Do you have any questions regarding our products or how to sell your
+            used games?
+          </p>
+          <p>
+            Fill out a form and submit it, then we will reach out to you within
+            one to two working days.
+          </p>
+        </div>
+      </section>
 
-    <section class="container">
-      <div>
-        <label for="form">Fill out form</label>
-        <input type="text" class="form" />
-      </div>
-      <div>
-        <label for="mail">Enter email address</label>
-        <input type="email" class="mail" />
-      </div>
-    </section>
-    <input type="button" value="SUBMIT" class="SUBMIT" />
+      <section class="contact-form">
+        <form action="contact-success.html" method="POST">
+          <label for="form">Fill out form</label> <br />
+          <br />
+          <textarea
+            class="form"
+            name="message"
+            placeholder="Fill in this form"
+            required
+          ></textarea>
+          <br />
+          <br />
+          <label for="mail">Enter email address</label> <br />
+          <br />
+          <input
+            type="email"
+            class="mail"
+            placeholder="Example@mail.com"
+            required
+          />
+          <br /><br />
 
+          <a href="contact-succes.html"
+            ><input type="submit" class="button button-submit" id="submit"
+          /></a>
+        </form>
+      </section>
+    </main>
     <footer>
       <div>
         <ul>
