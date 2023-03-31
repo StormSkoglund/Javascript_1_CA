@@ -119,26 +119,34 @@ main {
 }
 
 footer {
-  display: grid;
+  background-color: var(--my-orange);
   width: 100vw;
-  height: auto;
+  height: 5em;
+  /*background-color: var(--my-orange);*/
   /*object-fit: cover;*/
   /*position: relative;*/
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: nowrap;
 }
-footer div {
+footer span {
   background-color: var(--my-orange);
   color: antiquewhite;
-  padding: 2% 10% 2%;
-  /* text-align: center;*/
+  padding-right: 35em;
+  padding-left: 35em;
+  white-space: 5em;
+
+  /*display: grid;
+  grid-auto-rows: 1fr 2fr 1fr;*/
+
+  /*padding-right: 10em;
+  padding-left: 10em;
+  padding-top: 3em;
+  padding-bottom: 3em;*/
 }
 
-footer li {
-  display: inline;
-  padding: 15px 3px 15px;
-}
 /* Grid areas for header, main, footer*/
 header {
   grid-area: header;
@@ -291,6 +299,10 @@ footer {
 .search-icon:hover {
   transition: ease-in-out, 300ms;
   opacity: 85%;
+}
+
+.so-me {
+  height: 1em;
 }
 /* Contact page */
 
