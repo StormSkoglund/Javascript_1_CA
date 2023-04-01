@@ -831,19 +831,45 @@ form {
   background-color: var(--my-light-grey);
 }
 
-.login {
+.infobox-login {
+  display:flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  border-radius: 40px;
+  padding:  10px;
+  margin: 3em 35em 3em;
+
+}
+
+.login {
+  /*align-items: center;*/
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   background-color: white;
   border-radius: 40px;
   margin: 2em 30em 2em;
-  padding: 0.1% 11% 2%;
+  /*padding: 0.1% 11% 2%;*/
 }
 
 .login input {
   text-align: center;
   padding: var(--my-padding);
   font-weight: bolder;
+}
+
+.button-submit2 {
+  width: 10em;
+  height: 3em;
+  padding: 10px;
+  border: none;
+  font-weight: bolder;
+  font-size: large;
 }
 
 /*game hub account*/
