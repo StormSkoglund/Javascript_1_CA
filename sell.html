@@ -26,10 +26,8 @@
       href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="css/styles.css" />
-
-    <title>Contact-success</title>
+    <title>Contact Page</title>
   </head>
   <body>
     <header>
@@ -63,19 +61,42 @@
         /></a>
       </nav>
     </header>
-    <main class="main-contact-success">
-      <div class="infobox">
-        <h1>SUCCESS</h1>
-        <br />
-        We will reach out to you as soon as possible. If you haven’t heard from
-        us within a week, please check your spam-folder.
-      </div>
-      <br /><br />
-      <img
-        class="confirm"
-        src="images/buttons_and_icons/Wing.png"
-        alt="Confirmation icon"
-      />
+    <main class="contact-main">
+      <section class="infobox">
+        <div>
+          <h1>Sell Your Games</h1>
+          <p>
+            Interested in selling your games to us? Fill out the form below.
+            Please describe the condition of the game or games that you want to
+            sell, and we will return with an offer, within a working day or two.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact-form">
+        <form action="sell-success.html" method="GET">
+          <label for="form">Fill out form</label>
+
+          <textarea
+            class="form"
+            name="message"
+            placeholder="Fill in this form"
+            required
+          ></textarea>
+
+          <label for="mail">Enter email address</label>
+          <input
+            type="email"
+            class="mail"
+            placeholder="Example@mail.com"
+            required
+          />
+
+          <a href="contact-success.html">
+            <input type="submit" class="button button-submit" />
+          </a>
+        </form>
+      </section>
     </main>
     <footer>
       <span class="footer-left">

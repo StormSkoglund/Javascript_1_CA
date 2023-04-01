@@ -225,6 +225,7 @@ footer {
   width: 30em;
   height: 22em;
   margin: auto;
+  text-align: center;
   top: -40em;
   padding: 4em;
   border-top-right-radius: 70vw;
@@ -308,6 +309,16 @@ footer {
 
 .so-me {
   height: 1em;
+}
+
+.anim-about:hover {
+  transition: ease-in-out, 300ms;
+  opacity: 65%;
+}
+
+.anim-contact:hover {
+  transition: ease-in-out, 300ms;
+  opacity: 65%;
 }
 /* Contact page */
 
