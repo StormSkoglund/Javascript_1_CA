@@ -142,7 +142,7 @@ footer {
 
 .footer-right {
   color: antiquewhite;
- /* white-space: 5em;*/
+  /* white-space: 5em;*/
   font-size: x-large;
 }
 
@@ -150,15 +150,6 @@ footer {
   color: antiquewhite;
   /*white-space: 5em;*/
   font-size: x-large;
-}
-
-  /*display: grid;
-  grid-auto-rows: 1fr 2fr 1fr;*/
-
-  /*padding-right: 10em;
-  padding-left: 10em;
-  padding-top: 3em;
-  padding-bottom: 3em;*/
 }
 
 /* Grid areas for header, main, footer*/
@@ -693,6 +684,10 @@ form {
   max-width: 1200px;
   margin: 0 auto;*/
 
+.main-games-list {
+  margin-bottom: 3em;
+}
+
 .games-list-description {
   display: grid;
   grid-template-columns: 1fr 2.7fr;
@@ -832,21 +827,19 @@ form {
 }
 
 .infobox-login {
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   background-color: white;
   border-radius: 40px;
-  padding:  10px;
   margin: 3em 35em 3em;
-
 }
 
 .login {
   /*align-items: center;*/
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
