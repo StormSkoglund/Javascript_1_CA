@@ -126,17 +126,31 @@ footer {
   /*object-fit: cover;*/
   /*position: relative;*/
   display: flex;
-  flex-direction: row;
+  /*flex-direction: row;*/
   align-items: center;
   justify-content: space-around;
-  flex-wrap: nowrap;
+  /* flex-wrap: nowrap;*/
 }
-footer span {
-  background-color: var(--my-orange);
+.footer-left {
+  /*background-color: var(--my-orange);*/
   color: antiquewhite;
-  padding-right: 35em;
-  padding-left: 35em;
-  white-space: 5em;
+  /*padding-right: 35em;
+  padding-left: 35em;*/
+  /*white-space: 5em;*/
+  font-size: x-large;
+}
+
+.footer-right {
+  color: antiquewhite;
+ /* white-space: 5em;*/
+  font-size: x-large;
+}
+
+.footer-center {
+  color: antiquewhite;
+  /*white-space: 5em;*/
+  font-size: x-large;
+}
 
   /*display: grid;
   grid-auto-rows: 1fr 2fr 1fr;*/
