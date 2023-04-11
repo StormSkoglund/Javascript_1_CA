@@ -989,24 +989,30 @@ form {
   }
   footer {
     width: 100vw;
-    height: 3em;
+    height: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
   }
   .footer-left {
     color: antiquewhite;
-
-    font-size: small;
+    font-size: medium;
+    margin: -0.5em 0 -0.8em
+    padding: var(--my-padding)
   }
 
   .footer-right {
     color: antiquewhite;
-
     font-size: small;
+    margin: -0.5em 0 -0.8em;
+    padding: var(--my-padding)
   }
-
   .footer-center {
     color: antiquewhite;
-
     font-size: small;
+    margin: -0.5em 0 -0.5em;
+    padding: var(--my-padding);
   }
 
   /*Media queries max-width 480 pixel for front page*/
@@ -1021,10 +1027,7 @@ form {
   }
 
   .first-textbox {
-    /*position: relative;*/
-    /*width: 18em;
-    top: -55em;
-    left: 20em;*/
+    
     font-size: xx-small;
     margin-left: -5rem;
     margin-top: 82%;
@@ -1275,4 +1278,108 @@ form {
     font-weight: bolder;
     font-size: large;
   }
+
+  /*Product page max 480 pixel*/
+
+  /*.main-product {
+    height: 50vh;
+  }*/
+  
+  .overlay {
+    background-color: #323131;
+    width: 100vw;
+    height: fit-content;
+    position: relative;
+    top: 7em;
+    opacity: calc(80%);
+  }
+  
+  .product-hero {
+    width: 25em;
+    height: auto;
+    position: relative;
+    left: 0;
+    right: 0;
+    opacity: calc(80%);
+    filter: blur(0.5px);
+    filter: brightness(85%);
+    box-shadow: 0px 10px 10px var(--my-grey);
+  }
+  
+  .product-mobile-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .product-game {
+    position:inherit;
+    width:60%;
+    height: auto;
+    margin-top: 10em;
+    margin-bottom: 38em;
+    
+  }
+  
+  .product-text {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 10;
+    height: 18em;
+    color: white;
+    top: 10em;
+    left: 1em;
+  }
+  
+  .pick-game {
+    position: relative;
+    top: -35em;
+    left: 1em;
+    margin-bottom: 8em;
+  }
+  
+  .new-game {
+    position: relative;
+    left: 7.5em;
+    top: -2.2em;
+  }
+  .used-game {
+    position: relative;
+    left: 7.5em;
+    top: -2.2em;
+  }
+  
+  .price-cart {
+    position: relative;
+    width: 50px;
+    left: 17em;
+    top: -3.5em;
+    padding: 6px;
+    box-shadow: 0px 4px 5px #575555;
+  }
+  
+  .screenshots {
+    position: relative;
+    top: -45em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4em;
+    margin-bottom: -40em;
+  }
+  
+  .screenshots h2 {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: fit-content;
+    height: fit-content;
+  }
+  
+  .shot1,
+  .shot2,
+  .shot3 {
+    width: 18em;
+    height: auto;
 }
