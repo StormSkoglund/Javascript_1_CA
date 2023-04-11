@@ -974,8 +974,8 @@ form {
     width: 10em;
     height: 2em;
     border-radius: 7px;
-    margin-top: 2.5em;
-    margin-left: 1em;
+    margin-top: 1.5em;
+    margin-left: 0.2em;
     font-weight: bolder;
     font-size: large;
   }
@@ -983,30 +983,29 @@ form {
   .search-icon {
     width: 2em;
     height: 2em;
-    margin-top: 2.5em;
+    margin-top: 1.5em;
     margin-right: 1em;
-    margin-left: 0.25em;
+    margin-left: 0.15em;
   }
   footer {
     width: 100vw;
-    height: 4em;
+    height: 5em;
     display: flex;
     flex-direction: column;
     align-items: center;
-
   }
   .footer-left {
     color: antiquewhite;
     font-size: medium;
-    margin: -0.5em 0 -0.8em
-    padding: var(--my-padding)
+    margin: -0.5em 0 -0.8em;
+    padding: var(--my-padding);
   }
 
   .footer-right {
     color: antiquewhite;
     font-size: small;
     margin: -0.5em 0 -0.8em;
-    padding: var(--my-padding)
+    padding: var(--my-padding);
   }
   .footer-center {
     color: antiquewhite;
@@ -1027,7 +1026,6 @@ form {
   }
 
   .first-textbox {
-    
     font-size: xx-small;
     margin-left: -5rem;
     margin-top: 82%;
@@ -1284,7 +1282,7 @@ form {
   /*.main-product {
     height: 50vh;
   }*/
-  
+
   .overlay {
     background-color: #323131;
     width: 100vw;
@@ -1293,7 +1291,7 @@ form {
     top: 7em;
     opacity: calc(80%);
   }
-  
+
   .product-hero {
     width: 25em;
     height: auto;
@@ -1305,7 +1303,7 @@ form {
     filter: brightness(85%);
     box-shadow: 0px 10px 10px var(--my-grey);
   }
-  
+
   .product-mobile-flex {
     display: flex;
     flex-direction: column;
@@ -1313,14 +1311,13 @@ form {
     justify-content: center;
   }
   .product-game {
-    position:inherit;
-    width:60%;
+    position: inherit;
+    width: 60%;
     height: auto;
     margin-top: 10em;
     margin-bottom: 38em;
-    
   }
-  
+
   .product-text {
     position: absolute;
     display: flex;
@@ -1331,14 +1328,14 @@ form {
     top: 10em;
     left: 1em;
   }
-  
+
   .pick-game {
     position: relative;
     top: -35em;
     left: 1em;
     margin-bottom: 8em;
   }
-  
+
   .new-game {
     position: relative;
     left: 7.5em;
@@ -1349,7 +1346,7 @@ form {
     left: 7.5em;
     top: -2.2em;
   }
-  
+
   .price-cart {
     position: relative;
     width: 50px;
@@ -1358,7 +1355,7 @@ form {
     padding: 6px;
     box-shadow: 0px 4px 5px #575555;
   }
-  
+
   .screenshots {
     position: relative;
     top: -45em;
@@ -1368,7 +1365,7 @@ form {
     gap: 4em;
     margin-bottom: -40em;
   }
-  
+
   .screenshots h2 {
     position: relative;
     left: 0;
@@ -1376,10 +1373,75 @@ form {
     width: fit-content;
     height: fit-content;
   }
-  
+
   .shot1,
   .shot2,
   .shot3 {
     width: 18em;
     height: auto;
+  }
+
+  /*checkout + remove game 1-3 media queries, max 480px*/
+
+  .checkout-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .review {
+    /*display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;*/
+    /*grid-area: h2;*/
+    margin-left: 1em;
+    margin: 8em 0 -8em;
+  }
+
+  .checkout_display {
+    display: grid;
+    background-color: #f69351;
+    width: 14em;
+    height: fit-content;
+    grid-template-columns: 250px 300px;
+    border-radius: 50px;
+    margin: 9em 1em 2em;
+    padding: 1em 3em 1em;
+    grid-gap: 1em;
+    grid-area: checkout;
+    box-shadow: 0px 10px 10px #575555;
+    grid-template-areas:
+      "text text"
+      "price price"
+      "image image"
+      "button button"
+      "text2 text2"
+      "price2 price2"
+      "image2 image2"
+      "button2 button2";
+  }
+
+  .grid-item-1 {
+    grid-area: text;
+    margin-left: -2em;
+    font-size: small;
+  }
+
+  .grid-item-3 {
+    grid-area: image;
+    margin-left: -3em;
+  }
+
+  .grid-item-5 {
+    grid-area: text2;
+    margin-left: -2em;
+    font-size: small;
+  }
+
+  .grid-item-7 {
+    grid-area: image2;
+    margin-left: -3em;
+  }
 }
