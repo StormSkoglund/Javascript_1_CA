@@ -937,7 +937,7 @@ form {
   margin-top: -10em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
   /*media queries max-width 600 pixel header and footer*/
 
   header {
@@ -1009,7 +1009,7 @@ form {
     font-size: small;
   }
 
-  /*Media queries max-width 600 pixel for front page*/
+  /*Media queries max-width 480 pixel for front page*/
 
   .hero {
     /*width: 50vw;
@@ -1130,5 +1130,104 @@ form {
     float: right;
     margin-right: 1em;
     margin-top: 0;
+  }
+
+  /*media queries max 480 pixel list of games*/
+
+  .console-images {
+    grid-area: console;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .games-list-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .h1-list {
+    position: relative;
+    right: 0%;
+    left: 0%;
+    width: 20em;
+    height: 15em;
+    margin-top: 8em;
+    text-align: center;
+    font-size: medium;
+  }
+
+  .h1-list2 {
+    text-align: center;
+    width: 12em;
+  }
+
+  .h2-list {
+    width: 15em;
+  }
+
+  .games-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: fit-content;
+    gap: 2em;
+    margin: 0 1em 0;
+    margin-top: 1em;
+  }
+
+  .games-list img {
+    width: 15em;
+    height: auto;
+  }
+
+  .games-button {
+    position: relative;
+    top: 0;
+    margin: 0;
+    left: 0;
+    float: right;
+  }
+
+  .games-list label {
+    position: relative;
+    top: 0;
+    font-weight: bolder;
+    float: right;
+  }
+  .games-list2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: fit-content;
+    gap: 2em;
+    margin: 0 1em 0;
+    margin-top: 1em;
+  }
+
+  .games-list2 img {
+    width: 15em;
+    height: auto;
+  }
+
+  .games-list2 button {
+    position: relative;
+    top: 2em;
+    margin: 3em 0em 3em 0em;
+    left: -6.6em;
+  }
+
+  .games-list2 label {
+    position: relative;
+    top: 0;
+    font-weight: bolder;
+    float: right;
   }
 }
