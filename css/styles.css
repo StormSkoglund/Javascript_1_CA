@@ -953,9 +953,9 @@ form {
   }
 
   .logo {
-    width: 6em;
+    width: 4em;
     height: auto;
-    object-fit: scale-down;
+    /*object-fit: scale-down;*/
   }
 
   .log-in {
@@ -1469,5 +1469,13 @@ form {
   }
   .button-submit {
     margin-bottom: 20em;
+  }
+
+  /*ABOUT US*/
+
+  .infobox2 {
+    border-radius: 4px;
+    font-size: large;
+    margin: 18em 1em 25em;
   }
 }
