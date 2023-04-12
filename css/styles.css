@@ -955,19 +955,18 @@ form {
   .logo {
     width: 4em;
     height: auto;
-    /*object-fit: scale-down;*/
   }
 
   .log-in {
     width: 3em;
     height: auto;
-    object-fit: scale-down;
+    /*object-fit: scale-down;*/
   }
 
   .checkout {
     width: 3em;
     height: auto;
-    object-fit: scale-down;
+    /* object-fit: scale-down;*/
   }
 
   .search {
@@ -1471,11 +1470,26 @@ form {
     margin-bottom: 20em;
   }
 
-  /*ABOUT US*/
+  /*ABOUT US max 480px*/
 
   .infobox2 {
     border-radius: 4px;
     font-size: large;
     margin: 18em 1em 25em;
+  }
+
+  /*add to cart max 480 px*/
+
+  .added-cart {
+    background-color: white;
+    border-radius: 40px;
+    margin: 20em 1em 44em;
+    padding: var(--my-padding);
+    line-height: 2.5em;
+  }
+
+  .confirmed {
+    width: 4em;
+    margin: 2em;
   }
 }
