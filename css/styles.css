@@ -1,4 +1,5 @@
 /*global styling*/
+
 html {
   min-height: 100vh;
   width: 100vw;
@@ -262,7 +263,7 @@ footer {
   flex-direction: row;
   align-items: center;
   margin-top: 2em;
-  justify-content: space-evenly;
+  /*justify-content: space-evenly;*/
 }
 
 .front-cover {
@@ -938,42 +939,58 @@ form {
 }
 
 @media screen and (max-width: 480px) {
-  /*media queries max-width 600 pixel header and footer*/
+  /*media queries max-width 480 pixel header and footer*/
 
   header {
     height: fit-content;
-    position: absolute;
+    /*position: absolute;*/
+    padding: 0;
   }
   header nav {
     display: flex;
     flex-direction: row;
-    padding: 1% 0% 1%;
-    align-items: flex-start;
-    flex-wrap: nowrap;
+    padding: 0;
+    align-items: center;
+    flex-wrap: wrap;
   }
 
   .logo {
     width: 4em;
     height: auto;
+    margin-top: 0.5em;
   }
 
   .log-in {
-    width: 3em;
+    width: 1.5em;
     height: auto;
     /*object-fit: scale-down;*/
   }
 
   .checkout {
-    width: 3em;
+    width: 1.5em;
     height: auto;
     /* object-fit: scale-down;*/
   }
 
+  .header-item-1 {
+    flex: none;
+    display: block;
+  }
+
+  .header-item-2 {
+    margin-left: -1em;
+    margin-right: 0;
+  }
+
+  .header-item-3 {
+    margin-right: 0em;
+  }
+
   .search {
-    width: 10em;
+    width: 7em;
     height: 2em;
     border-radius: 7px;
-    margin-top: 1.5em;
+    margin-top: 0.5em;
     margin-left: 0.2em;
     font-weight: bolder;
     font-size: large;
@@ -982,7 +999,7 @@ form {
   .search-icon {
     width: 2em;
     height: 2em;
-    margin-top: 1.5em;
+    margin-top: 1em;
     margin-right: 1em;
     margin-left: 0.15em;
   }
@@ -1258,7 +1275,7 @@ form {
   }
 
   .login label {
-    margin-bottom: -2.5em;
+    margin-bottom: -1.5em;
   }
 
   .login input {
