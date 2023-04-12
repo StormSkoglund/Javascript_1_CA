@@ -263,7 +263,7 @@ footer {
   flex-direction: row;
   align-items: center;
   margin-top: 2em;
-  /*justify-content: space-evenly;*/
+  justify-content: center;
 }
 
 .front-cover {
@@ -943,7 +943,6 @@ form {
 
   header {
     height: fit-content;
-    /*position: absolute;*/
     padding: 0;
   }
   header nav {
@@ -963,13 +962,11 @@ form {
   .log-in {
     width: 1.5em;
     height: auto;
-    /*object-fit: scale-down;*/
   }
 
   .checkout {
     width: 1.5em;
     height: auto;
-    /* object-fit: scale-down;*/
   }
 
   .header-item-1 {
@@ -1295,10 +1292,6 @@ form {
 
   /*Product page max 480 pixel*/
 
-  /*.main-product {
-    height: 50vh;
-  }*/
-
   .overlay {
     background-color: #323131;
     width: 100vw;
@@ -1309,7 +1302,7 @@ form {
   }
 
   .product-hero {
-    width: 25em;
+    width: 100%;
     height: auto;
     position: relative;
     left: 0;
@@ -1341,7 +1334,7 @@ form {
     width: 10;
     height: 18em;
     color: white;
-    top: 10em;
+    top: 12em;
     left: 1em;
   }
 
@@ -1350,6 +1343,7 @@ form {
     top: -35em;
     left: 1em;
     margin-bottom: 8em;
+    max-width: fit-content;
   }
 
   .new-game {
@@ -1365,9 +1359,11 @@ form {
 
   .price-cart {
     position: relative;
-    width: 50px;
-    left: 17em;
+    display: inline-block;
+    width: 40px;
+    /*left: 17em;*/
     top: -3.5em;
+    margin-left: -2em;
     padding: 6px;
     box-shadow: 0px 4px 5px #575555;
   }
@@ -1407,18 +1403,13 @@ form {
   }
 
   .review {
-    /*display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;*/
-    /*grid-area: h2;*/
     margin: 8em 0 -8em;
   }
 
   .checkout_display {
     display: grid;
     background-color: #f69351;
-    width: 14em;
+    width: 250px;
     height: fit-content;
     grid-template-columns: 250px 300px;
     border-radius: 50px;
@@ -1436,6 +1427,10 @@ form {
       "price2 price2"
       "image2 image2"
       "button2 button2";
+  }
+
+  .grid-item {
+    max-width: 250px;
   }
 
   .grid-item-1 {
@@ -1508,5 +1503,18 @@ form {
   .confirmed {
     width: 4em;
     margin: 2em;
+  }
+
+  /*sell success 480px*/
+
+  .infobox {
+    margin-top: 5em;
+  }
+
+  .confirm {
+    width: 6em;
+    height: auto;
+    align-items: center;
+    margin-top: -6em;
   }
 }
