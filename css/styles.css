@@ -1706,13 +1706,17 @@ form {
     width: 50%;
     height: 30%;
     text-align: center;
+    margin-bottom: 2em;
   }
 
   .to-game {
-    display: flex;
-    float: none;
-    /*margin-right: 15em;
-    margin-top: -11em;*/
+    width: 100px;
+    text-align: center;
+    margin: auto;
+    float: right;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 2em;
   }
 }
 
