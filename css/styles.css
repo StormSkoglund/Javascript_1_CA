@@ -422,13 +422,12 @@ footer {
 .checkout_display {
   display: grid;
   background-color: #f69351;
-  width: 600px;
+  width: 423px;
   height: fit-content;
   grid-template-columns: 250px 300px;
   border-radius: 50px;
   margin: auto;
   padding: 1em 3em 1em;
-  grid-gap: 1em;
   grid-area: checkout;
   box-shadow: 0px 10px 10px #575555;
   grid-template-areas:
@@ -436,6 +435,7 @@ footer {
     "button image"
     "text2 price2"
     "button2 image2";
+  font-size: small;
 }
 
 .grid-item-1 {
@@ -479,8 +479,8 @@ a {
 }
 
 .checkout_display img {
-  width: 20em;
-  height: 25em;
+  width: 15em;
+  height: 20em;
 }
 
 .checkout-form {
@@ -959,11 +959,11 @@ form {
     flex-direction: row;
     padding: 0;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
 
   .logo {
-    width: 4em;
+    width: 3.8em;
     height: auto;
     margin-top: 0.5em;
   }
@@ -984,7 +984,7 @@ form {
   }
 
   .header-item-2 {
-    margin-left: -1em;
+    /*margin-left: -1em;*/
     margin-right: 0;
   }
 
@@ -993,8 +993,8 @@ form {
   }
 
   .search {
-    width: 6em;
-    height: 2em;
+    width: 5.5em;
+    height: 1.5em;
     border-radius: 7px;
     margin-top: 0.5em;
     margin-left: 0.2em;
@@ -1003,8 +1003,8 @@ form {
   }
 
   .search-icon {
-    width: 2em;
-    height: 2em;
+    width: 1.5em;
+    height: 1.5em;
     margin-top: 1em;
     margin-right: 0.5em;
     margin-left: 0.15em;
@@ -1106,7 +1106,7 @@ form {
   .buttons-front {
     background-color: var(--my-grey);
     padding: 1em;
-    width: 20em;
+    width: fit-content;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -1117,6 +1117,17 @@ form {
     border-bottom-left-radius: 40em;
     box-shadow: 0px 5px 8px var(--my-orange);
   }
+
+  .list {
+    margin: 0.5em;
+    padding: 6px;
+  }
+
+  .sell {
+    margin: 0.5em;
+    padding: 6px;
+  }
+
   .front-flexbox {
     display: flex;
     flex-direction: column;
@@ -1424,7 +1435,6 @@ form {
     border-radius: 50px;
     margin: 9em 1em 2em;
     padding: 1em 3em 1em;
-    grid-gap: 1em;
     grid-area: checkout;
     box-shadow: 0px 10px 10px #575555;
     grid-template-areas:
@@ -1603,7 +1613,6 @@ form {
 
   .hero {
     width: 0vw;
-    height: auto;
   }
 
   .first-textbox {
@@ -1611,7 +1620,7 @@ form {
     display: flex;
     flex-direction: column;
     width: 95vw;
-    height: 30vh;
+    height: 75vh;
     top: 0em;
     left: 0em;
     background-image: url(/images/Flighty.gif);
@@ -1725,6 +1734,27 @@ form {
     margin-right: 0;
     margin-top: 0;
     margin-bottom: 2em;
+  }
+
+  /*login page max 710px*/
+  .infobox-login {
+    margin: 0;
+  }
+  .login {
+    margin: auto;
+  }
+  /* checkout max 710px*/
+  .checkout_display {
+    width: 423px;
+    grid-template-columns: none;
+  }
+  .checkout_display img {
+    width: 15em;
+    height: 20em;
+  }
+  .grid-item-1,
+  .grid-item-5 {
+    font-size: small;
   }
 }
 
