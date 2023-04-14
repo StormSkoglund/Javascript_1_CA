@@ -40,14 +40,21 @@ header {
   /*width: 100vw;*/
   height: auto;
   object-fit: cover;
-  position: relative;
+  position: static;
+  display: flex;
+  flex-direction: row;
+  padding: 1% 1% 1%;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: nowrap;
 }
 
 header nav {
   display: flex;
   flex-direction: row;
-  padding: 1% 0% 1%;
-  align-items: flex-start;
+  padding: 1% 2% 1%;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
@@ -57,36 +64,36 @@ header nav {
 }
 
 .log-in {
-  width: 3em;
+  width: 4em;
   height: auto;
   object-fit: scale-down;
 }
 
 .checkout {
-  width: 3em;
+  width: 4em;
   height: auto;
   object-fit: scale-down;
 }
 
 .header-item-1 {
-  flex: 1.3;
+  /*flex: 1.3;*/
   display: inline-block;
 }
 
 .header-item-2 {
-  margin-left: 8.5em;
-  margin-right: 3em;
+  /*margin-left: 8.5em;
+  margin-right: 3em;*/
 }
 
 .header-item-3 {
-  margin-right: 3em;
+  /*margin-right: 3em;*/
 }
 
 .search {
   width: 25em;
   height: 4em;
   border-radius: 7px;
-  margin-top: 2.7em;
+  margin-top: 0em;
   font-weight: bolder;
   font-size: large;
 }
@@ -94,8 +101,9 @@ header nav {
 .search-icon {
   width: 4em;
   height: 4em;
-  margin-top: 3em;
-  margin-right: 8.5em;
+  padding: 5px;
+  margin-top: 1em;
+  /*margin-right: 8.5em;*/
 }
 
 a {
@@ -985,7 +993,7 @@ form {
   }
 
   .search {
-    width: 7em;
+    width: 6em;
     height: 2em;
     border-radius: 7px;
     margin-top: 0.5em;
@@ -1530,18 +1538,18 @@ form {
   }
 
   .log-in {
-    width: 2.5em;
+    width: 2em;
     height: auto;
   }
 
   .checkout {
-    width: 2.5em;
+    width: 2em;
     height: auto;
   }
 
   .search {
-    width: 10em;
-    height: 3.5em;
+    width: 8em;
+    height: 2.5em;
     margin-top: 2em;
     margin-left: 0.5em;
     font-size: medium;
