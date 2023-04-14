@@ -213,7 +213,7 @@ footer {
 .first-textbox {
   position: relative;
   width: 18em;
-  top: -55em;
+  top: -50em;
   left: 20em;
 }
 
@@ -427,7 +427,7 @@ footer {
   grid-template-columns: 250px 300px;
   border-radius: 50px;
   margin: auto;
-  padding: 1em 3em 1em;
+  padding: 1.5em;
   grid-area: checkout;
   box-shadow: 0px 10px 10px #575555;
   grid-template-areas:
@@ -616,16 +616,13 @@ form {
   width: 100vw;
   height: fit-content;
   position: relative;
-  top: -1em;
   opacity: calc(80%);
 }
 
 .product-hero {
-  width: 50em;
+  width: 100vw;
   height: auto;
   position: relative;
-  left: 25em;
-  right: 25em;
   opacity: calc(80%);
   filter: blur(0.5px);
   filter: brightness(85%);
@@ -636,22 +633,22 @@ form {
   width: 30em;
   height: auto;
   top: -39.55em;
-  left: 10em;
 }
 
 .product-text {
   position: relative;
-  width: 17em;
+  width: 13em;
   height: 18em;
   color: white;
   top: -75em;
-  left: 55em;
+  left: 32em;
 }
 
 .pick-game {
   position: relative;
   top: -55em;
-  left: 15em;
+  left: 1em;
+  max-width: 200px;
 }
 
 .new-game {
@@ -678,15 +675,14 @@ form {
   position: relative;
   top: -45em;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
   gap: 4em;
   margin-bottom: -40em;
 }
 
 .screenshots h2 {
-  position: relative;
-  left: 2em;
-  top: -3em;
   width: fit-content;
   height: fit-content;
 }
@@ -720,9 +716,7 @@ form {
 
 .h1-list {
   grid-area: h1;
-  position: relative;
-  right: 25%;
-  left: 25%;
+  text-align: center;
 }
 
 .h1-list2 {
@@ -1073,22 +1067,23 @@ form {
     margin: auto;
     text-align: center;
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
   }
 
   .first-textbox h1 {
     font-weight: bolder;
-    font-size: small;
+    font-size: x-large;
     color: antiquewhite;
     text-align: center;
   }
 
   .first-textbox p {
     font-weight: bolder;
-    font-size: large;
+    font-size: larger;
     width: 50vw;
     margin: auto;
-    color: antiquewhite;
+    color: rgb(248, 241, 233);
     background: var(--my-grey);
     opacity: 90%;
   }
@@ -1650,12 +1645,13 @@ form {
     margin: auto;
     text-align: center;
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
   }
 
   .first-textbox h1 {
     font-weight: bolder;
-    font-size: larger;
+    font-size: x-large;
     color: antiquewhite;
   }
 
