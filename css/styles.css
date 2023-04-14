@@ -1038,7 +1038,7 @@ form {
 
   /*Media queries max-width 480 pixel for front page*/
 
-  .hero {
+  /*.hero {
     margin-top: 5em;
     border-top-left-radius: 80em;
     border-top-right-radius: 80em;
@@ -1053,6 +1053,27 @@ form {
     margin-top: 34em;
     width: 50%;
     height: 3%;
+  }*/
+  .hero {
+    width: 0vw;
+  }
+
+  .first-textbox {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    height: 75vh;
+    top: 0em;
+    left: 0em;
+    background-image: url(/images/Flighty.gif);
+    border-top-right-radius: 7em;
+    border-top-left-radius: 7em;
+    box-shadow: 0px 10px 10px var(--my-grey);
+    margin: auto;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .first-textbox h1 {
@@ -1064,33 +1085,32 @@ form {
 
   .first-textbox p {
     font-weight: bolder;
-    font-size: small;
-    text-align: center;
+    font-size: large;
+    width: 50vw;
+    margin: auto;
+    color: antiquewhite;
+    background: var(--my-grey);
+    opacity: 90%;
   }
 
   .second-textbox {
-    background-color: var(--my-light-grey);
+    background-color: #d5c8c3;
+    position: static;
+    width: 50vw;
+    height: fit-content;
+    margin: auto;
+    text-align: center;
+    top: 0;
+    padding: 5em;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 70vw;
+    border-bottom-left-radius: 70vw;
+    margin: auto;
+    opacity: 85%;
     border: solid;
     border-color: var(--my-orange);
-    border-width: 1.5px;
-    box-shadow: 0px 5px 10px var(--my-grey);
-
-    text-align: center;
-
-    border-top-right-radius: 0vw;
-    border-top-left-radius: 0vw;
-    border-bottom-left-radius: 70vw;
-    border-bottom-right-radius: 70vw;
-
-    opacity: 85%;
-    font-size: x-small;
-    width: 20em;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    border-width: 2px;
   }
 
   .second-textbox h1 {
@@ -1112,7 +1132,7 @@ form {
     flex-direction: row;
     text-align: center;
     margin: 0 auto;
-    margin-top: -25em;
+    margin-top: 0;
     border-top-right-radius: 40em;
     border-bottom-left-radius: 40em;
     box-shadow: 0px 5px 8px var(--my-orange);
@@ -1273,7 +1293,7 @@ form {
     text-align: center;
     background-color: white;
     border-radius: 40px;
-    margin: 15em 4em 0;
+    margin: 2em;
     padding: 2em;
   }
 
@@ -1288,7 +1308,7 @@ form {
     text-align: center;
     background-color: white;
     border-radius: 40px;
-    margin: 10em 3em 25em;
+    margin: 2em;
   }
 
   .login label {
@@ -1537,7 +1557,7 @@ form {
     margin-top: -6em;
   }
 }
-@media only screen and (max-width: 710px) and (min-width: 481px) {
+@media only screen and (max-width: 1300px) and (min-width: 481px) {
   /*header*/
   header {
     max-height: 8em;
@@ -1738,10 +1758,12 @@ form {
 
   /*login page max 710px*/
   .infobox-login {
-    margin: 0;
+    margin: 2em;
+    border-radius: 20px;
   }
   .login {
-    margin: auto;
+    margin: 2em;
+    border-radius: 20px;
   }
   /* checkout max 710px*/
   .checkout_display {
@@ -1756,12 +1778,117 @@ form {
   .grid-item-5 {
     font-size: small;
   }
+
+  /*games list, same as mobile*/
+  .console-images {
+    grid-area: console;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .games-list-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .h1-list {
+    position: relative;
+    right: 0%;
+    left: 0%;
+    width: 20em;
+    height: 15em;
+    margin-top: 8em;
+    text-align: center;
+    font-size: medium;
+  }
+
+  .h1-list2 {
+    text-align: center;
+    width: 12em;
+  }
+
+  .h2-list {
+    width: 15em;
+  }
+
+  .games-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 50%;
+    gap: 2em;
+    margin: 0 1em 0;
+    margin-top: 1em;
+  }
+
+  .games-list img {
+    width: 15em;
+    height: auto;
+  }
+
+  .games-button {
+    position: relative;
+    top: 0;
+    margin: 0;
+    left: 0;
+    float: right;
+  }
+
+  .games-list label {
+    position: relative;
+    top: 0;
+    font-weight: bolder;
+    float: left;
+  }
+  .games-list2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 50%;
+    gap: 2em;
+    margin: 0 1em 0;
+    margin-top: 1em;
+  }
+
+  .games-list2 img {
+    width: 15em;
+    height: auto;
+  }
+
+  .games-list2 button {
+    position: relative;
+    top: 2em;
+    margin: 3em 0em 3em 0em;
+    left: -6.6em;
+  }
+
+  .games-list2 label {
+    position: relative;
+    top: 0;
+    font-weight: bolder;
+    float: left;
+  }
+
+  /*Other stylings*/
+
+  .infobox {
+    margin: 4em;
+    border-radius: 20px;
+  }
 }
 
-@media only screen and (max-width: 1300px) and (min-width: 710px) {
+/*@media only screen and (max-width: 1300px) and (min-width: 710px) {
   /*header*/
 
-  header {
+/*header {
     height: fit-content;
     padding: 0;
     width: auto;
@@ -1844,4 +1971,4 @@ form {
     font-size: large;
     margin: 0.5;
   }
-}
+}*/
