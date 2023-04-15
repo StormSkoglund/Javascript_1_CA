@@ -1,4 +1,7 @@
 /*global styling*/
+.break {
+  display: block;
+}
 
 html {
   min-height: 100vh;
@@ -7,7 +10,10 @@ html {
 }
 
 :root {
+  --my-white: #ffffff;
+  --my-black: #1f111f;
   --my-orange: #db5901;
+  --my-dark-orange: #803a0b;
   --my-grey: #575555;
   --my-light-grey: #d5c8c3;
   --my-padding: 5px;
@@ -180,15 +186,15 @@ footer {
 }
 
 .button {
-  background-color: #db5901;
-  color: antiquewhite;
+  background-color: var(--my-orange);
+  color: var(--my-black);
   font-weight: bolder;
-  border-color: #100f0f;
+  border-color: var(--my-black);
   border-radius: 3px;
   border-width: 1px;
   padding: 10px 20px 10px;
   margin: 1em;
-  box-shadow: 0px 2px 5px #575555;
+  box-shadow: 0px 2px 5px var(--my-grey);
 }
 /*Home page*/
 .main-split {
@@ -398,8 +404,8 @@ footer {
   align-items: center;
   text-align: center;
   background-color: white;
-  border-radius: 10%;
-  margin: 15% 27% 10%;
+  border-radius: 25px;
+  margin: 10em;
   padding: 0.1% 11% 2%;
 }
 /*checkout page*/
@@ -476,6 +482,7 @@ a {
   width: fit-content;
   height: fit-content;
   padding: 10px;
+  color: var(--my-black);
 }
 
 .checkout_display img {
@@ -642,6 +649,8 @@ form {
   color: white;
   top: -75em;
   left: 32em;
+  font-weight: 600;
+  font-size: larger;
 }
 
 .pick-game {
@@ -675,7 +684,7 @@ form {
   position: relative;
   top: -45em;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-items: center;
   gap: 4em;
@@ -937,7 +946,7 @@ form {
   width: 6em;
   height: auto;
   align-items: center;
-  margin-top: -10em;
+  margin-top: -14em;
 }
 
 @media only screen and (max-width: 480px) {
@@ -1371,6 +1380,7 @@ form {
     color: white;
     top: 12em;
     left: 1em;
+    font-size: medium;
   }
 
   .pick-game {
@@ -1549,7 +1559,7 @@ form {
     width: 6em;
     height: auto;
     align-items: center;
-    margin-top: -6em;
+    margin-top: -8em;
   }
 }
 @media only screen and (max-width: 1500px) and (min-width: 481px) {
@@ -1986,6 +1996,13 @@ form {
   .infobox {
     margin: 6em;
     border-radius: 20px;
+  }
+
+  .confirm {
+    width: 6em;
+    height: auto;
+    align-items: center;
+    margin-top: -7em;
   }
 }
 
