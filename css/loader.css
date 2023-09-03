@@ -1,0 +1,25 @@
+.loadScreen {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  opacity: 70;
+  align-items: center;
+  max-width: 8em;
+  max-height: fit-content;
+  animation: flip 2s linear infinite;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotatey(0deg) scale(100%);
+    opacity: 80%;
+  }
+  50% {
+    transform: rotatey(180deg) scale(80%);
+    opacity: 20%;
+  }
+  100% {
+    transform: rotatey(360deg) scale(100%);
+    opacity: 80%;
+  }
+}

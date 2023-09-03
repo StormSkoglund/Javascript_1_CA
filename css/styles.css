@@ -659,7 +659,7 @@ form {
   justify-content: center;
 }
 
-/*product page*/
+/*product_page*/
 
 .main-product {
   height: 50vh;
@@ -1361,7 +1361,7 @@ form {
     font-size: large;
   }
 
-  /*Product page max 480 pixel*/
+  /*Product_page max 480 pixel*/
 
   .overlay {
     background-color: #323131;
@@ -1900,7 +1900,7 @@ form {
     font-weight: bolder;
     float: left;
   }
-  /* Product page same as mobile*/
+  /* Product_page same as mobile*/
 
   .overlay {
     background-color: #323131;
