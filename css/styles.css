@@ -188,6 +188,7 @@ body {
     "main main"
     "footer footer";
   min-height: 100vh;
+  align-content: space-between;
 }
 
 main {
@@ -249,6 +250,15 @@ footer {
   margin: 1em;
   box-shadow: 0px 2px 5px var(--my-grey);
 }
+
+/*API related classes*/
+
+.APIgame {
+  display: block;
+  max-width: 10em;
+  max-height: fit-content;
+}
+
 /*Home page*/
 .main-split {
   background: linear-gradient(
@@ -665,13 +675,12 @@ form {
   height: 50vh;
 }
 
-.overlay {
+/*.overlay {
   background-color: #323131;
   width: 100vw;
   height: fit-content;
   position: relative;
-  opacity: calc(80%);
-}
+  opacity: calc(80%);*/
 
 .product-hero {
   width: 100vw;
@@ -683,13 +692,13 @@ form {
 }
 
 .product-game {
-  position: relative;
+  /*position: relative;*/
   width: 30em;
   height: auto;
-  top: -39.55em;
+  /*top: -39.55em;*/
 }
 
-.product-text {
+/*.product-text {
   position: relative;
   width: 13em;
   height: 18em;
@@ -698,12 +707,12 @@ form {
   left: 32em;
   font-weight: 600;
   font-size: larger;
-}
+}*/
 
 .pick-game {
-  position: relative;
+  /*position: relative;
   top: -55em;
-  left: 1em;
+  left: 1em;*/
   max-width: 200px;
 }
 
@@ -727,7 +736,7 @@ form {
   box-shadow: 0px 4px 5px #575555;
 }
 
-.screenshots {
+/*/.screenshots {
   position: relative;
   top: -45em;
   display: flex;
@@ -736,12 +745,12 @@ form {
   justify-items: center;
   gap: 4em;
   margin-bottom: -40em;
-}
+}*/
 
-.screenshots h2 {
+/*.screenshots h2 {
   width: fit-content;
   height: fit-content;
-}
+}*/
 
 .shot1,
 .shot2,
@@ -1363,14 +1372,14 @@ form {
 
   /*Product_page max 480 pixel*/
 
-  .overlay {
+  /*.overlay {
     background-color: #323131;
     width: 100vw;
     height: fit-content;
     position: relative;
     top: 7em;
     opacity: calc(80%);
-  }
+  }*/
 
   .product-hero {
     width: 100%;
@@ -1386,19 +1395,22 @@ form {
 
   .product-mobile-flex {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-content: stretch;
+    flex-wrap: wrap;
+    margin: 2em;
   }
   .product-game {
     position: inherit;
     width: 60%;
     height: auto;
-    margin-top: 10em;
-    margin-bottom: 38em;
+    /*margin-top: 10em;
+    margin-bottom: 38em;*/
   }
 
-  .product-text {
+  /*.product-text {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -1408,12 +1420,12 @@ form {
     top: 12em;
     left: 1em;
     font-size: medium;
-  }
+  }*/
 
   .pick-game {
-    position: relative;
+    /*position: relative;
     top: -35em;
-    left: 0.1em;
+    left: 0.1em;*/
     margin-bottom: 8em;
     max-width: 70vw;
   }
@@ -1439,7 +1451,7 @@ form {
     box-shadow: 0px 4px 5px #575555;
   }
 
-  .screenshots {
+  /*.screenshots {
     position: relative;
     top: -45em;
     display: flex;
@@ -1447,15 +1459,15 @@ form {
     align-items: center;
     gap: 4em;
     margin-bottom: -40em;
-  }
+  }*/
 
-  .screenshots h2 {
+  /*.screenshots h2 {
     position: relative;
     left: 0;
     top: 0;
     width: fit-content;
     height: fit-content;
-  }
+  }*/
 
   .shot1,
   .shot2,
@@ -1902,14 +1914,14 @@ form {
   }
   /* Product_page same as mobile*/
 
-  .overlay {
+  /*.overlay {
     background-color: #323131;
     width: 100vw;
     height: fit-content;
     position: relative;
     top: 7em;
     opacity: calc(80%);
-  }
+  }*/
 
   .product-hero {
     width: 100%;
@@ -1923,21 +1935,15 @@ form {
     box-shadow: 0px 10px 10px var(--my-grey);
   }
 
-  .product-mobile-flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
   .product-game {
     position: inherit;
     width: 60%;
     height: auto;
-    margin-top: 10em;
-    margin-bottom: 38em;
+    /*margin-top: 10em;
+    margin-bottom: 38em;*/
   }
 
-  .product-text {
+  /*.product-text {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -1948,7 +1954,7 @@ form {
     left: 1em;
     line-height: 1;
     font-size: medium;
-  }
+  }*/
 
   .product-text p {
     font-size: large;
@@ -1956,8 +1962,8 @@ form {
   }
 
   .pick-game {
-    position: relative;
-    top: -35em;
+    /*position: relative;
+    top: -35em;*/
     left: 1em;
     margin-bottom: 8em;
     max-width: fit-content;
@@ -1984,7 +1990,7 @@ form {
     box-shadow: 0px 4px 5px #575555;
   }
 
-  .screenshots {
+  /*.screenshots {
     position: relative;
     top: -45em;
     display: flex;
@@ -1992,15 +1998,15 @@ form {
     align-items: center;
     gap: 4em;
     margin-bottom: -40em;
-  }
+  }*/
 
-  .screenshots h2 {
+  /*.screenshots h2 {
     position: relative;
     left: 0;
     top: 0;
     width: fit-content;
     height: fit-content;
-  }
+  }*/
 
   .shot1,
   .shot2,
@@ -2020,5 +2026,19 @@ form {
     height: auto;
     align-items: center;
     margin-top: -7em;
+  }
+}
+
+@media only screen and (max-width: 1920px) and (min-width: 1501px) {
+  /*New styling for desktop product_page, H2 and description (same as mobile and tablet)*/
+
+  .product-mobile-flex {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 2em;
+    align-items: center;
   }
 }

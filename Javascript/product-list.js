@@ -16,22 +16,22 @@ const url = "https://api.noroff.dev/api/v1/gamehub";
 
 async function getGames() {
   const response = await fetch(url);
+  const list = await response.json();
 
-  const json = await response.json();
-  const gamesCollection = json;
+  const collection = list;
   gameList.innerHTML = "";
 
   /*I am using the for each method, this was demonstrated in module 4, lesson one. I am looping through my list (gameDetails), which contains meta data about the different games)
    */
-  gamesCollection.forEach((game) => {
+  collection.forEach((unique) => {
     gameList.innerHTML += `<div>
-          <p> ${game.title} </p>
+          <p> ${unique.title} </p>
           <img
-            src="${game.image}"
+            src="${unique.image}"
             
             class="img_as_pl"
           />
-          <a href="product_page.html?id=${game.id}" class="button games-button">View Game</a>
+          <a href="product_page.html?id=${unique.id}" class="button games-button">View Game</a>
         </div>`;
   });
 }

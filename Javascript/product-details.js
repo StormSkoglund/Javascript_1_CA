@@ -1,32 +1,30 @@
-const productPageCover = document.querySelector(".product-text");
-
-const url = "https://api.noroff.dev/api/v1/gamehub/" + id;
+/*const productPageCover = document.querySelector(".product-text");
+const gameCover = document.querySelector(".overlay");*/
+const prodFlex = document.querySelector(".product-mobile-flex");
 
 /*Here I am using the method, demonstrated in module 4 lesson 3, in order to pass variables into my product site*/
 
 const queryString = document.location.search;
 
-console.log(queryString);
+const parameters = new URLSearchParams(queryString);
 
-const params = new URLSearchParams(queryString);
+const id = parameters.get("id");
 
-const id = params.get("id");
 /*Here I am adding the unique product id from the API call to the HTML of the product-site*/
 
+const url = "https://api.noroff.dev/api/v1/gamehub/" + id;
+
 async function productPage() {
-  try {
-    const response = await fetch(url);
-    const specProd = await response.json();
+  const response = await fetch(url);
+  const specProd = await response.json();
 
-    productPageCover.innerHTML = "";
+  /*productPageCover.innerHTML = "";
+  gameCover.innerHTML = "";*/
 
-    const products = specProd;
+  productDetails(specProd);
 
-    products.forEach((product) => {
-      productPageCover.innerHTML += `<h2> ${product.title}</h2> <p> ${product.description} </p>`;
-    });
-  } catch (error) {
-    productPageCover.innerHTML = message("error", error);
+  function productDetails(specProd) {
+    prodFlex.innerHTML += `<h2> ${specProd.title}</h2> <p> ${specProd.description} </p> <img class ="APIgame" src "${specProd.image}" />`;
   }
 }
 
