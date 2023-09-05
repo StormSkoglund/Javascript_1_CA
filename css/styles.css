@@ -797,14 +797,13 @@ form {
 }
 
 .games-list-description img {
-  width: 350px;
+  max-width: 320px;
   height: auto;
-  margin: 0.5em;
 }
 .consolebanner1 {
   background-color: #575555;
   color: var(--my-white);
-  width: 30vw;
+
   margin: 0 auto;
   padding: 1em 10em 1em 0.5em;
   box-shadow: 0px 5px 6px var(--my-orange);
