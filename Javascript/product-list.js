@@ -1,5 +1,5 @@
 const gameList = document.querySelector(".games-list");
-
+const loadContainer = document.querySelector(".loadContainer");
 /*Here I am using the method, demonstrated in module 4 lesson 3, in order to pass variables into my product site*/
 
 /*const queryString = document.location.search;
@@ -30,6 +30,8 @@ async function getGames() {
             src="${unique.image}"
             
             class="img_as_pl"
+
+            alt="${unique.description}"
           />
           <a href="product_page.html?id=${unique.id}" class="button games-button">View Game</a>
         </div>`;

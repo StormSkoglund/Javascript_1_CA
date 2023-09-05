@@ -24,7 +24,7 @@ async function productPage() {
   productDetails(specProd);
 
   function productDetails(specProd) {
-    prodFlex.innerHTML += `<img class ="APIgame" src = "${specProd.image}" /> <h2> ${specProd.title}</h2> <p> ${specProd.description} </p>`;
+    prodFlex.innerHTML += `<img class ="APIgame" src = "${specProd.image}" alt = "${specProd.description}" /> <h2> ${specProd.title}</h2> <p> ${specProd.description} </p>`;
   }
 }
 

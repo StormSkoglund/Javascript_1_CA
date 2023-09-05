@@ -803,7 +803,6 @@ form {
 .consolebanner1 {
   background-color: #575555;
   color: var(--my-white);
-
   margin: 0 auto;
   padding: 1em 10em 1em 0.5em;
   box-shadow: 0px 5px 6px var(--my-orange);
