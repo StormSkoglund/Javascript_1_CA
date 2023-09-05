@@ -255,7 +255,7 @@ footer {
 
 .APIgame {
   display: block;
-  max-width: 10em;
+  max-width: 15em;
   max-height: fit-content;
 }
 
@@ -713,6 +713,7 @@ form {
   /*position: relative;
   top: -55em;
   left: 1em;*/
+  margin: 3em;
   max-width: 200px;
 }
 
@@ -1003,6 +1004,19 @@ form {
 
 @media only screen and (max-width: 480px) {
   /*media queries max-width 480 pixel header and footer*/
+
+  /* later adjustment for product site: Pick-Game small  */
+
+  .pick-game {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: baseline;
+    align-items: baseline;
+    font-size: smaller;
+
+    margin: 0.5em;
+  }
 
   header {
     height: fit-content;
@@ -1426,7 +1440,8 @@ form {
     /*position: relative;
     top: -35em;
     left: 0.1em;*/
-    margin-bottom: 8em;
+    /*margin-bottom: 8em;*/
+    /*margin: 2em;*/
     max-width: 70vw;
   }
 
@@ -1964,9 +1979,9 @@ form {
   .pick-game {
     /*position: relative;
     top: -35em;*/
-    left: 1em;
-    margin-bottom: 8em;
-    max-width: fit-content;
+    /*margin: 2em;*/
+    /*margin-bottom: 8em;*/
+    /*max-width: fit-content;*/
   }
 
   .new-game {
