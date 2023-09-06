@@ -11,6 +11,7 @@
   font-size: large;
   padding: 3em;
   animation: pulse 2s linear infinite;
+  font-family: "Karla", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 @keyframes pulse {

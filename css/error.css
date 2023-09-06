@@ -1,0 +1,11 @@
+.error {
+  max-width: 10em;
+  font-size: large;
+  background-color: rgba(255, 0, 0, 0.664);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border-radius: 1em;
+  border: solid purple;
+  padding: 3em;
+  font-family: "Karla", Verdana, Geneva, Tahoma, sans-serif;
+}
