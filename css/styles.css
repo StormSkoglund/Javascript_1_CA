@@ -1974,14 +1974,6 @@ form {
     font-weight: bold;
   }
 
-  .pick-game {
-    /*position: relative;
-    top: -35em;*/
-    /*margin: 2em;*/
-    /*margin-bottom: 8em;*/
-    /*max-width: fit-content;*/
-  }
-
   .new-game {
     position: relative;
     left: 7.5em;

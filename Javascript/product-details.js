@@ -2,6 +2,8 @@ const prodFlex = document.querySelector(".product-mobile-flex");
 const loaderParent = document.querySelector(".loadPar");
 const displayError = document.querySelector(".error");
 const errorParent = document.querySelector(".errPar");
+const uniqueTitle = document.querySelector(".unTit");
+const metaDescription = document.querySelector(".meta");
 /*Here I am using the method, demonstrated in module 4 lesson 3, in order to pass variables into my product site*/
 
 const queryString = document.location.search;
@@ -26,10 +28,15 @@ async function productPage() {
 
     function productDetails(specProd) {
       prodFlex.innerHTML += `<img class ="APIgame" src = "${specProd.image}" alt = "${specProd.description}" /> <h2> ${specProd.title}</h2> <p> ${specProd.description} </p>`;
+      uniqueTitle.innerHTML += `${specProd.title}`;
+      /*metaDescription.innerHTML += `<meta class="meta"`;
+      name = "${specProd.description}";
+      content = ""
+    />`;*/
     }
   } catch (error) {
     console.log("Error");
-    errorParent.innerHTML = "Error :/ Please try again later.";
+    errorParent.innerHTML += `<div class= ".error"> :/ Please try again later.</div>`;
   }
 }
 
