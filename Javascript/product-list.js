@@ -1,14 +1,12 @@
 const gameList = document.querySelector(".games-list");
 const loadContainer = document.querySelector(".loadContainer");
-/*Here I am using the method, demonstrated in module 4 lesson 3, in order to pass variables into my product site*/
 
-/*const queryString = document.location.search;
+// error handling, as demonstrated by Talitha Kruger on Aug 32, 2023 on Loom
+function errorRendered(message) {
+  const errorHtml = document.getElementById("error");
+  errorHtml.innerHTML = `<h2>Error occurred: ${message}<h2>`;
+}
 
-console.log(queryString);
-
-const params = new URLSearchParams(queryString);
-
-const id = params.get("id");
 /*Here I am adding the unique product id from the API call to the HTML of the product-site*/
 
 const url = "https://api.noroff.dev/api/v1/gamehub";
