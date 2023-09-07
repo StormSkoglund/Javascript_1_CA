@@ -728,7 +728,8 @@ form {
   top: -2.2em;
 }
 
-.price-cart {
+.price-cart,
+.price-cart2 {
   position: relative;
   width: 50px;
   left: 19em;
@@ -1454,7 +1455,8 @@ form {
     top: -2.2em;
   }
 
-  .price-cart {
+  .price-cart,
+  .price-cart2 {
     position: relative;
     display: inline-block;
     width: 40px;
@@ -1985,7 +1987,8 @@ form {
     top: -2.2em;
   }
 
-  .price-cart {
+  .price-cart,
+  .price-cart2 {
     position: relative;
     display: inline-block;
     width: 40px;

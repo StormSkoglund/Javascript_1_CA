@@ -4,6 +4,8 @@ const displayError = document.querySelector(".error");
 const errorParent = document.querySelector(".errPar");
 const uniqueTitle = document.querySelector(".unTit");
 const metaDescription = document.querySelector(".meta");
+const usedPrices = document.querySelector(".price-cart");
+const newPrices = document.querySelector(".price-cart2");
 /*Here I am using the method, demonstrated in module 4 lesson 3, in order to pass variables into my product site*/
 
 const queryString = document.location.search;
@@ -29,6 +31,8 @@ async function productPage() {
     function productDetails(specProd) {
       prodFlex.innerHTML += `<img class ="APIgame" src = "${specProd.image}" alt = "${specProd.description}" /> <h2> ${specProd.title}</h2> <p> ${specProd.description} </p>`;
       uniqueTitle.innerHTML += `${specProd.title}`;
+      usedPrices.innerHTML += `${specProd.discountedPrice}$`;
+      newPrices.innerHTML += `${specProd.price}$`;
       /*metaDescription.innerHTML += `<meta class="meta"`;
       name = "${specProd.description}";
       content = ""
