@@ -1,10 +1,10 @@
 const gameList = document.querySelector(".games-list");
-const loadContainer = document.querySelector(".loadContainer");
+const loaderParent = document.querySelector(".loadContainer");
 
 // error handling, as demonstrated by Talitha Kruger on Aug 32, 2023 on Loom
 function errorRendered(message) {
-  const errorHtml = document.getElementById("error");
-  errorHtml.innerHTML = `<h2>Error occurred: ${message}<h2>`;
+  const errorHtml = document.querySelector(".error");
+  errorHtml.innerHTML = `<h2>An error occurred: ${message}<h2>`;
 }
 
 /*Here I am adding the unique product id from the API call to the HTML of the product-site*/
@@ -13,16 +13,30 @@ const url = "https://api.noroff.dev/api/v1/gamehub";
 /*I was trying to move the API URL into another file to use it as a component of sorts, but I didn't manage to get it to work. I was following this video by MJ Philips "https://www.youtube.com/watch?v=l-nOOCb4wG0&list=PLOy2fxfOYlVPVTCIKfEKh5VGCR3_DmxV4&index=13"[viewed on 31. August 2023].*/
 
 async function getGames() {
-  const response = await fetch(url);
-  const list = await response.json();
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      loaderParent.innerHTML = "";
+      throw new Error("failed to fetch product list.");
+    }
 
-  const collection = list;
-  gameList.innerHTML = "";
+    const list = await response.json();
+    return list;
+  } catch (error) {
+    throw error;
+  }
+}
 
-  /*I am using the for each method, this was demonstrated in module 4, lesson one. I am looping through my list (gameDetails), which contains meta data about the different games)
-   */
-  collection.forEach((unique) => {
-    gameList.innerHTML += `<div>
+/*I am using the forEach method, this was demonstrated in module 4, lesson one. I am looping through my list (gameDetails), which contains meta data about the different games)
+ */
+async function renderList() {
+  try {
+    const list = await getGames();
+    const collection = list;
+    gameList.innerHTML = "";
+    loaderParent.innerHTML = "";
+    collection.forEach((unique) => {
+      gameList.innerHTML += `<div>
           <p> ${unique.title} </p>
           <img
             src="${unique.image}"
@@ -33,9 +47,10 @@ async function getGames() {
           />
           <a href="product_page.html?id=${unique.id}" class="button games-button">View Game</a>
         </div>`;
-  });
+    });
+  } catch (error) {
+    errorRendered(error.message);
+  }
 }
-
-/* In the code above, I have selected my container and then I created new HTML in my products-list HTML page, changing out the hardcoded game titles and cover photos as well as giving them the original styling via class names*/
-
-getGames();
+/* In the above code, I have selected my container and then I created new HTML in my products-list HTML page, changing out the hardcoded game titles and cover photos as well as giving them the original styling via class names*/
+renderList();
