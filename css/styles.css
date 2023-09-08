@@ -1833,7 +1833,7 @@ form {
   .console-images {
     grid-area: console;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
   }
@@ -2047,5 +2047,13 @@ form {
     flex-wrap: wrap;
     margin: 2em;
     align-items: center;
+  }
+
+  .console-images {
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: center;
+    max-width: 50vw;
   }
 }
