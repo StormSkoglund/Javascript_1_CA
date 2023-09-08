@@ -1,10 +1,11 @@
 const gameList = document.querySelector(".games-list");
 const loaderParent = document.querySelector(".loadContainer");
+const errorContainer = document.querySelector(".errCont");
 
 // error handling, as demonstrated by Talitha Kruger on Aug 32, 2023 on Loom
 function errorRendered(message) {
   const errorHtml = document.querySelector(".error");
-  errorHtml.innerHTML = `<h2>An error occurred: ${message}<h2>`;
+  errorHtml.innerHTML = `<h2>An error has occurred: ${message}<h2>`;
 }
 
 /*Here I am adding the unique product id from the API call to the HTML of the product-site*/
@@ -32,9 +33,11 @@ async function getGames() {
 async function renderList() {
   try {
     const list = await getGames();
-    const collection = list;
     gameList.innerHTML = "";
     loaderParent.innerHTML = "";
+    errorContainer.innerHTML = "";
+    const collection = list;
+
     collection.forEach((unique) => {
       gameList.innerHTML += `<div>
           <p> ${unique.title} </p>

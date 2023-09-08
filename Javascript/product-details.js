@@ -4,6 +4,7 @@ const uniqueTitle = document.querySelector(".unTit");
 const metaDescription = document.querySelector(".meta");
 const usedPrices = document.querySelector(".price-cart");
 const newPrices = document.querySelector(".price-cart2");
+const errorContainer = document.querySelector(".errCont");
 
 // error handling method, as demonstrated by Talitha Kruger on Aug 32, 2023 on Loom.
 function errorRendered(message) {
@@ -43,6 +44,8 @@ async function productDetails() {
   try {
     const specProd = await productPage();
     loaderParent.innerHTML = ""; //Toggle off loading screen
+    errorContainer.innerHTML = ""; //Toggle off error styling
+
     prodFlex.innerHTML += `<img class ="APIgame" src = "${specProd.image}" alt = "${specProd.description}" /> <h2> ${specProd.title}</h2> <p> ${specProd.description} </p>`;
     uniqueTitle.innerHTML += `${specProd.title}`; // Change title in browser tab.
     usedPrices.innerHTML += `${specProd.discountedPrice}$`;
