@@ -1,4 +1,4 @@
-# HTML-and-CSS-CA
+# HTML-and-CSS-CA   This repo also includes the JavaScript 1 CA
 
 UPDATE: This is an updated version for the Javascript 1 CA. For this CA I have used different methods for making API calls and handling the errors that may occur in the process. The methods used is a combination between the ones demonstrated in the curriculum, and the ones shown to us in later class sessions and in demos handed to us during classes.
 
